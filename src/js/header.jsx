@@ -1,13 +1,14 @@
 import React from 'react';
 import * as whiteLeavesLogo from '../svg/whiteLeavesLogo.svg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faInstagram, faFacebookF, faTwitter} from '@fortawesome/free-brands-svg-icons';
+import {faInstagram} from '@fortawesome/free-brands-svg-icons';
+import { FaExternalLinkAlt } from "react-icons/fa";
 // import Timer from './timer.jsx';
 
 function Header() {
   return(
     <nav id="header">
-      <ul className="container" style={{background: '#15766A'}}>
+      <ul className="container" style={{background: '#fed13e'}}>
         <li id="header-logo">
           <a href="/">
             <img src={whiteLeavesLogo} alt="code jam small logo"/>
@@ -25,8 +26,7 @@ function Header() {
 function SocialMedia() {
   return(
     <div id="social-media">
-      <a style={{background: 'white'}} href="https://www.instagram.com/acmw.gfu" target="_blank"><FontAwesomeIcon style={{color: '#15766A'}} icon={faInstagram} /></a>
-      <a style={{background: 'white'}} href="https://foxacmw.com" target="_blank"><FontAwesomeIcon style={{color: '#15766A'}} icon="fa-solid fa-arrow-up-right-from-square" /></a>
+      <a style={{background: 'white'}} href="https://www.instagram.com/acmw.gfu" target="_blank"><FontAwesomeIcon style={{color: '#000'}} icon={faInstagram} /></a>
     </div>
   );
 }

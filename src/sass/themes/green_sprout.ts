@@ -1,24 +1,12 @@
 export default {
-  "hackathon_year": 2021,
-  "hackathon_date_range": "February 12-14",
+  "hackathon_year": 2022,
+  "hackathon_date_range": "April 1-3",
   "deadlines": [
       {
-          "key": "oos",
-          "label": "out-of-state",
-          "date": "2020-12-16T07:59:00.000Z",
-          "display_date": "December 15, 2020"
-      },
-      {
-          "key": "is",
-          "label": "in-state",
-          "date": "2020-12-16T07:59:00.000Z",
-          "display_date": "December 15, 2020"
-      },
-      {
-          "key": "stanford",
-          "label": "Stanford student",
-          "date": "2021-01-15T07:59:00.000Z",
-          "display_date": "February 13, 2021"
+          "key": "georgefox",
+          "label": "George Fox Bruin",
+          "date": "2022-04-01T07:59:00.000Z",
+          "display_date": "April 1, 2022"
       }
   ],
   "logo": require('./assets/logo.svg'),

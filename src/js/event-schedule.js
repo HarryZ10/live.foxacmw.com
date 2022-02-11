@@ -93,18 +93,17 @@ export default Vue.component("event-schedule", {
   
   created: function() {
 
-    // TODO: will need to change this date
     if (
-      (new Date().getTime() - new Date("2021-02-12 15:00").getTime()) /
+      (new Date().getTime() - new Date("2022-04-01 15:00").getTime()) /
         3600000 <
-      36
+      30
     )
       setInterval(this.updateTime, 60000);
     this.updateTime();
     var ctx = this;
     // TODO: will need to change this url and possibly event colours
     fetch(
-      "https://api.eventive.org/event_buckets/600fc040ac1bef0079ecb20b/events_slim?api_key=2db927190aa686598bf88c893181cb7a"
+      "https://api.eventive.org/"
     )
       .then(r => r.json())
       .then(data => {
@@ -116,12 +115,12 @@ export default Vue.component("event-schedule", {
             items: []
           },
           {
-            name: "HackX",
+            name: "Workshops",
             color: "#FF730E",
             items: []
           },
           {
-            name: "Workshops",
+            name: "Minecraft Break",
             color: "#6B8E23",
             items: []
           },
