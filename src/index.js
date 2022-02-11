@@ -51,7 +51,6 @@ function App() {
                         to=""
                     /> */}
                     <Route exact path="/" component={Main} />
-                    <Redirect to="/" />
                 </Switch>
             </Router>
         </div>

@@ -2,7 +2,6 @@ import React from 'react';
 import * as whiteLeavesLogo from '../svg/whiteLeavesLogo.svg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faInstagram} from '@fortawesome/free-brands-svg-icons';
-import { FaExternalLinkAlt } from "react-icons/fa";
 // import Timer from './timer.jsx';
 
 function Header() {
@@ -10,7 +9,7 @@ function Header() {
     <nav id="header">
       <ul className="container" style={{background: '#fed13e'}}>
         <li id="header-logo">
-          <a href="/">
+          <a href="https://live.foxacmw.com">
             <img src={whiteLeavesLogo} alt="code jam small logo"/>
             <span className="logo-text-code">code</span>
             <span className="logo-text-jam">jam</span>

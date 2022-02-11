@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Resources() {
   return (
     <div id="resources" className="section">
-      <a href="#" rel="noopener noreferrer" target="_blank">
+      <a href="#">
         <div className="resource-1">
           <img src={discordIcon} alt="discord icon" className="resource-icon" />
           Discord
