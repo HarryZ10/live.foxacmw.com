@@ -1,0 +1,89 @@
+@import "sass/themes/green_sprout";
+@import "sass/global";
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+nav,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $base-font-family;
+  font-weight: bold;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.schedule-overlay a {
+  color: black;
+  text-decoration: underline;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  text-align: center;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+@media screen and (max-width: $mobile-screen) {
+  body {
+    font-size: $mobile-font-size;
+    padding-top: 60px;
+  }
+}
+
+#group {
+  @include flex(row nowrap, space-between, stretch);
+  width: $section-width;
+  margin: $medium-space auto;
+}
+
+@media screen and (max-width: $tablet-screen) {
+  #group {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    margin-top: $medium-space;
+  }
+}
+@import "node_modules/bricklayer/src/bricklayer";
+@import "sass/timer";
+@import "sass/header";
+@import "sass/countdown";
+@import "sass/resources";
+@import "sass/schedule";
+@import "sass/announcements";
+@import "sass/projects";
+@import "sass/hackpacks";
+@import "sass/roomstatus";
+@import "sass/apis";
+@import "sass/challenge";

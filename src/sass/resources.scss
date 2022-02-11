@@ -1,0 +1,74 @@
+#resources {
+  @extend %section;
+  @include flex(row nowrap, center, center);
+  padding: 0;
+  border-radius: 12px;
+
+  .disabled {
+    opacity: 0.3;
+    user-select: none;
+    cursor: not-allowed;
+    border-right: 1px solid darken($light-gray, 10/0.3);
+  }
+}
+
+%resource {
+  width: $section-width/6;
+  padding: 16px 0;
+  border-right: 1px solid $light-gray;
+}
+
+@for $i from 1 through 6 {
+  .resource-#{$i} {
+    @extend %resource;
+  }
+}
+
+.resource-6 {
+  border-right: none;
+}
+
+.resource-icon {
+  height: 24px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: $mobile-screen) {
+  #resources {
+    flex-wrap: wrap;
+
+    %resource {
+      width: $section-width/3;
+      padding: 12px 0;
+    }
+
+    @for $i from 1 to 4 {
+      .resource-#{$i} {
+        border-bottom: 1px solid $light-gray;
+
+        &.disabled {
+          border-bottom: 1px solid darken($light-gray, 10/0.3);
+        }
+      }
+    }
+
+    .resource-3,
+    .resource-3.disabled {
+      border-right: none;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-screen) {
+  #resources {
+    font-size: $base-font-size;
+  }
+
+  .resource-icon {
+    display: block;
+    padding: 0;
+    margin: 0 auto 2px;
+    height: 18px;
+  }
+}

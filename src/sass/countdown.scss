@@ -1,0 +1,82 @@
+#countdown {
+  @extend %section;
+
+  hr {
+    width: 40vw;
+    border: 1px solid $text-color;
+    margin: 0 auto;
+  }
+
+  .main-button {
+    font-size: $medium-font-size;
+    display: inline-block;
+    margin-top: $small-space * 2;
+    font-weight: bold;
+
+    & + .main-button {
+      margin-left: $small-space / 2;
+    }
+  }
+}
+
+#countdown-heading {
+  font-size: $heading-font-size;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 0 10%;
+  margin-top: $small-space;
+}
+
+.timeUnits {
+  @include flex(row nowrap, center, center);
+  width: 36vw;
+  margin: auto;
+  color: $text-color;
+
+  svg {
+    position: relative;
+    top: -12px;
+    height: 10px;
+    width: 10px;
+
+    circle {
+      cx: 5;
+      cy: 5;
+      r: 5;
+      fill: $text-color;
+    }
+  }
+}
+
+.timeUnit {
+  width: $timer-component-width;
+  margin-right: $timer-space;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: $mobile-screen) {
+  #countdown {
+    hr {
+      width: 70%;
+    }
+  }
+  .timeUnits {
+    width: 87.5%;
+    svg {
+      top: -8px;
+
+      circle {
+        cx: 4;
+        cy: 4;
+        r: 4;
+      }
+    }
+  }
+  .timeUnit {
+    width: 15%;
+    margin-right: 5%;
+  }
+}

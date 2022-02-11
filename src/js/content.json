@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "name": "Schedule",
+      "link": ""
+    },
+    {
+      "name": "Announcements",
+      "link": ""
+    },
+    {
+      "name": "HackPacks",
+      "link": ""
+    },
+    {
+      "name": "Projects",
+      "link": ""
+    },
+    {
+      "name": "Info",
+      "link": ""
+    },
+    {
+      "name": "Info",
+      "link": ""
+    }
+  ]
+}

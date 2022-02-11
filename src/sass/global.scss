@@ -1,0 +1,137 @@
+$mobile-font-size: 14px;
+$heading-font-size: 28px;
+$mobile-heading-font-size: 20px;
+$mobile-proj-font-size: 10px;
+
+$mobile-screen: 767px;
+$tablet-screen: 1023px;
+
+/* Base Styles */
+$section-width: 80vw;
+
+@mixin flex($flex-flow, $justify, $align) {
+  display: flex;
+  flex-flow: $flex-flow;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.logo-text-code {
+  font-family: $base-font-family;
+  color: white;
+}
+
+.logo-text-jam {
+  font-family: $base-font-family;
+  font-weight: bold;
+  color: white;
+}
+
+.logo-text-live {
+  font-family: $base-font-family;
+  font-weight: bold;
+  color: $primary-color;
+  padding-left: 10px;
+  color: white;
+}
+
+.section-heading {
+  font-size: $heading-font-size;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+%section {
+  background-color: $box-color;
+  width: $section-width;
+  margin: $medium-space auto;
+  padding: $medium-space 0;
+  border-radius: 1vw;
+}
+
+%half-section {
+  @extend %section;
+  width: calc(#{$section-width/2} - #{$medium-space/2});
+  margin: 0;
+
+  @media screen and (max-width: $mobile-screen) {
+    padding: 7.5% 0;
+  }
+
+  hr {
+    border: 1px solid $text-color;
+    width: 90%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+  }
+}
+
+.section {
+  box-shadow: 0 0 15px 0 #e4e4e4;
+}
+
+.main-button {
+  background-color: $primary-color;
+  color: $primary-btn-text-color;
+  border: $border-style;
+  border-color: $primary-btn-text-color;
+  border-radius: 8px !important;
+  padding: $base-font-size / 2;
+  transition: $transition-speed;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  line-height: 1;
+
+  &:hover {
+    background-color: $primary-color;
+    cursor: pointer;
+    transform: scale($transform-scale);
+  }
+}
+
+.inverted-button {
+  background-color: $box-color;
+  color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $primary-btn-text-color;
+  }
+}
+
+%menu {
+  position: fixed;
+  left: 0;
+  z-index: 101;
+  height: 60px;
+  width: 100vw;
+  background-color: white;
+  color: $dark-gray;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+@media screen and (max-width: $mobile-screen) {
+  .logo-text-live {
+    padding-left: 5px;
+  }
+
+  .section-heading {
+    font-size: $mobile-heading-font-size;
+  }
+
+  .main-button {
+    font-size: $mobile-proj-font-size;
+    padding: $mobile-proj-font-size
+  }
+}
+
+@media screen and (max-width: $tablet-screen) {
+  %half-section {
+    width: $section-width;
+  }
+}

@@ -1,0 +1,30 @@
+$timer-component-width: 7.5vw;
+$timer-space: 2vw;
+
+#timer {
+  @include flex(row nowrap, center, center);
+  font-family: $base-font-family;
+  font-weight: bold;
+  font-size: 4vw;
+  color: $primary-color;
+
+  span {
+    font-size: 4vw;
+    width: 5%; // $timer-space;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #timer {
+    font-size: 2.5vw;
+
+    span {
+      font-size: 3.5vw;
+      width: $timer-space;
+    }
+  }
+
+  .timerComponent {
+    width: $timer-component-width;
+  }
+}
