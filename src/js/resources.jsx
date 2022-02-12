@@ -1,13 +1,11 @@
 import React from "react";
-import resources from "./content.json";
 import discordIcon from "../svg/discord.svg";
 import devpostIcon from "../svg/devpost.svg";
-import { Link } from "react-router-dom";
 
 function Resources() {
   return (
     <div id="resources" className="section">
-      <a href="#">
+      <a href="/">
         <div className="resource-1">
           <img src={discordIcon} alt="discord icon" className="resource-icon" />
           Discord

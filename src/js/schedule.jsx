@@ -1,5 +1,4 @@
 import React from 'react';
-import { VueWrapper } from 'vuera'
 import Timeline from './timeline.jsx'
 import '../sass/timeline.scss';
 
