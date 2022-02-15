@@ -19,8 +19,7 @@ const timelineData = [
 			color: '#e17b77'
 		},
         link: {
-            url: '#',
-            text: 'Check it out here'
+            text: 'TBA/Discord Classroom'
         }
     },
     {
@@ -45,7 +44,7 @@ const timelineData = [
 			color: '#018f69'
 		},
         link: {
-            url: 'foxacmw.devpost.com',
+            url: 'https://foxacmw.devpost.com',
             text: 'Submit a formal presentation to Devpost'
         }
     },
