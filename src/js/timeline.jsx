@@ -12,21 +12,8 @@ const timelineData = [
         description: 'Hear more about what to expect at the Code Jam.',
     },
     {
-        text: 'Git/Github Workshop',
-        date: 'April 1, 2022 at 6:00pm',
-        category: {
-			tag: 'workshops',
-			color: '#e17b77'
-		},
-        description: 'Learn how to use Git and Github to collaborate on projects and get feedback from your peers.',
-        link: {
-            url: '#',
-            text: 'Check it out here'
-        }
-    },
-    {
         text: 'Hosting Workshop',
-        date: 'April 1, 2022 at 6:30pm',
+        date: 'April 1, 2022 at 6:15pm',
         category: {
 			tag: 'workshops',
 			color: '#e17b77'
@@ -38,17 +25,16 @@ const timelineData = [
     },
     {
         text:
-            'Minecraft Server Break',
+            'Minecraft Server Running!',
         date: 'April 1, 2022 at 11:30pm',
-        description: "Starting at 11:30pm until the end of Code Jam.",
+        description: "Server is Live at 11:30pm",
         category: {
 			tag: 'games',
 			color: '#018f69'
 		},
         link: {
-            url:
-                '#',
-            text: '(1.8.X - 1.18.X) IP: codejam.minehut.gg'
+            text: 'codejam.minehut.gg',
+            func: 'navigator.clipboard.writeText(this.state.textToCopy)'
         }
     },
     {
@@ -60,33 +46,29 @@ const timelineData = [
 		},
         link: {
             url: 'foxacmw.devpost.com',
-            text: 'Submit your project here!'
+            text: 'Submit a formal presentation to Devpost'
         }
     },
     {
         text: 'Judging period begins',
-        date: 'April 03, 2022 at 10:00am',
+        date: 'April 03, 2022 at 2:00pm',
         category: {
             tag: 'judging',
             color: '#018f69'
         },
         description: 'Please hang tight, we are judging!',
-        link: {
-            url: '#',
-            text: 'See the judging criteria'
-        }
     },
     {
         text: 'Judging period ends',
-        date: 'April 03, 2022 at 12:00pm',
+        date: 'April 03, 2022 at 3:00pm',
         category: {
             tag: 'judging',
             color: '#018f69'
         }
     },
     {
-        text: 'Free Lunch',
-        date: 'April 03, 2022 at 1:30pm',
+        text: 'Celebratory Dinner',
+        date: 'April 03, 2022 at 4:30pm',
         category: {
             tag: 'canyon',
             color: '#FFDB14'
@@ -95,16 +77,12 @@ const timelineData = [
     },
     {
         text: 'Award Ceremony',
-        date: 'April 03, 2022 at 4:00pm',
+        date: 'April 03, 2022 at 6:00pm',
         category: {
             tag: 'canyon',
             color: '#FFDB14'
         },
         description: 'Held in the Canyon Commons private dining room.',
-        link: {
-            url: '#',
-            text: 'Join us!'
-        }
     }
 ]
 
@@ -119,7 +97,8 @@ const TimelineItem = ({ data }) => (
             {data.description && (
                 <p>{data.description}</p>
             )}
-            {data.link && (
+            {data.link && !data.link.func && (
+                
                 <a
                     href={data.link.url}
                     target="_blank"
@@ -127,6 +106,19 @@ const TimelineItem = ({ data }) => (
                 >
                     {data.link.text}
                 </a>
+            )}
+
+            {/* make an alert to screen */}
+
+            {data.link && data.link.func && (
+                <a
+                    onClick={() => { navigator.clipboard.writeText(data.link.text)
+                    alert(`Copied ${data.link.text} to clipboard`) 
+                    
+                }}
+                >
+                    {data.link.text}
+                </a> 
             )}
             <span className="circle" />
         </div>
