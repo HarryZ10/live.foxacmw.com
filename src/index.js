@@ -4,7 +4,7 @@ import Header from "./js/header.jsx";
 import Countdown from "./js/countdown.jsx";
 import Resources from "./js/resources.jsx";
 import Schedule from "./js/schedule.jsx";
-import Gitlab from "./js/gitlab.jsx";
+import Leaderboard from "./js/leaderboard.jsx";
 import "./favicons/favicons";
 import "./index.scss";
 
@@ -24,8 +24,7 @@ class Main extends React.Component {
                 <Resources />
                 <p>Note: all times below are in PT (California time)</p>
                 <Schedule />
-                <Gitlab />
-                
+                <Leaderboard />       
             </div>
         );
     }
