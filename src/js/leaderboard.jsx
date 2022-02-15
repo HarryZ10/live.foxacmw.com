@@ -1,12 +1,12 @@
 import React from 'react';
 import useFetch from 'react-fetch-hook';
-import '../sass/gitlab.scss';
 
-export default function Gitlab() {
+export default function Leaderboard() {
 
     const MAIN_REPO_ID = "14399753";
     const PROJECT_IDS_LIST = ["33664481", "33664484", "33664485", "33664487", "33664488"]
-    
+
+
     const { isLoading, error, data }  = useFetch(
         `https://gitlab.com/api/v4/groups/${MAIN_REPO_ID}/projects`,
         {
@@ -14,7 +14,8 @@ export default function Gitlab() {
                 'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
         }
     });
-    
+
+
     const { isLoading: isLoading1, error: err1, data: commitData_team1}  = useFetch(
         `https://gitlab.com/api/v4/projects/${PROJECT_IDS_LIST[0]}/repository/commits`,
         {
@@ -22,6 +23,7 @@ export default function Gitlab() {
                 'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
         }
     });
+
 
     const { isLoading: isLoading2, error: err2, data: commitData_team2}  = useFetch(
         `https://gitlab.com/api/v4/projects/${PROJECT_IDS_LIST[1]}/repository/commits`,
@@ -49,6 +51,7 @@ export default function Gitlab() {
         }
     });
 
+
     const {isLoading: isLoading5, error: err5, data: commitData_team5}  = useFetch(
         `https://gitlab.com/api/v4/projects/${PROJECT_IDS_LIST[4]}/repository/commits`,
         {
@@ -57,13 +60,18 @@ export default function Gitlab() {
         }
     });
 
-    
-    
-    
 
     if (isLoading || isLoading1 || isLoading2 || isLoading3 || isLoading4 || isLoading5)
         return <p>Loading...</p>;
-    if (error || err1 || err2 || err3 || err4 || err5) return <p>Error :(</p>;
+
+
+    if (error || err1 || err2 || err3 || err4 || err5)
+        return (
+            <p>
+                Error! :(
+            </p>
+        );
+
 
     return (
         <div id="gitlab-leaderboard" className="section">
