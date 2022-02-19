@@ -5,8 +5,10 @@ import devpostIcon from "../svg/devpost.svg";
 function Resources() {
   return (
     <div id="resources" className="section">
-      <a href="/">
-        <div className="resource-1">
+      {/* Uncomment when going live */}
+      {/* <a href="https://discord.gg/ScUsTqchMf"> */}
+      <a>
+        <div className="resource-1 disabled">
           <img src={discordIcon} alt="discord icon" className="resource-icon" />
           Discord
         </div>

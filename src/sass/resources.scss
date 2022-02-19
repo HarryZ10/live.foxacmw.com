@@ -8,14 +8,13 @@
     opacity: 0.3;
     user-select: none;
     cursor: not-allowed;
-    border-right: 1px solid darken($light-gray, 10/0.3);
   }
 }
 
 %resource {
   width: $section-width/6;
   padding: 16px 0;
-  border-right: 1px solid $light-gray;
+  margin: 0 10px;
 }
 
 @for $i from 1 through 6 {
@@ -27,10 +26,6 @@
   .resource-#{$i}:hover {
     transform: scale($transform-scale);
   }
-}
-
-.resource-6 {
-  border-right: none;
 }
 
 .resource-icon {
@@ -46,21 +41,6 @@
     %resource {
       width: $section-width/3;
       padding: 12px 0;
-    }
-
-    @for $i from 1 to 4 {
-      .resource-#{$i} {
-        border-bottom: 1px solid $light-gray;
-
-        &.disabled {
-          border-bottom: 1px solid darken($light-gray, 10/0.3);
-        }
-      }
-    }
-
-    .resource-3,
-    .resource-3.disabled {
-      border-right: none;
     }
   }
 }

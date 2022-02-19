@@ -6,11 +6,15 @@ $timer-space: 2vw;
   font-family: $base-font-family;
   font-weight: bold;
   font-size: 4vw;
-  color: $primary-color;
+  color: #749abb;
 
   span {
     font-size: 4vw;
     width: 5%; // $timer-space;
+  }
+
+  .timerComponent {
+    font-size: $countdown-font-size;
   }
 }
 

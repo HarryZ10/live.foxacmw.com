@@ -1,11 +1,19 @@
 import React from 'react';
 import useFetch from 'react-fetch-hook';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import TeamOne from './gitlab/team_1';
+import TeamTwo from './gitlab/team_2';
+import TeamThree from './gitlab/team_3';
+import TeamFour from './gitlab/team_4';
+import TeamFive from './gitlab/team_5';
+import { Audio } from  'react-loader-spinner'
+import { BallTriangle } from  'react-loader-spinner'
 
 export default function Leaderboard() {
 
     const MAIN_REPO_ID = "14399753";
-    const PROJECT_IDS_LIST = ["33664481", "33664484", "33664485", "33664487", "33664488"]
-
 
     const { isLoading, error, data }  = useFetch(
         `https://gitlab.com/api/v4/groups/${MAIN_REPO_ID}/projects`,
@@ -15,89 +23,44 @@ export default function Leaderboard() {
         }
     });
 
-
-    const { isLoading: isLoading1, error: err1, data: commitData_team1}  = useFetch(
-        `https://gitlab.com/api/v4/projects/${PROJECT_IDS_LIST[0]}/repository/commits`,
-        {
-            headers: {
-                'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
-        }
-    });
-
-
-    const { isLoading: isLoading2, error: err2, data: commitData_team2}  = useFetch(
-        `https://gitlab.com/api/v4/projects/${PROJECT_IDS_LIST[1]}/repository/commits`,
-        {
-            headers: {
-                'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
-        }
-    });
-
-
-    const { isLoading: isLoading3, error: err3, data: commitData_team3}  = useFetch(
-        `https://gitlab.com/api/v4/projects/${PROJECT_IDS_LIST[2]}/repository/commits`,
-        {
-            headers: {
-                'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
-        }
-    });
-
-
-    const {isLoading: isLoading4, error: err4, data: commitData_team4}  = useFetch(
-        `https://gitlab.com/api/v4/projects/${PROJECT_IDS_LIST[3]}/repository/commits`,
-        {
-            headers: {
-                'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
-        }
-    });
-
-
-    const {isLoading: isLoading5, error: err5, data: commitData_team5}  = useFetch(
-        `https://gitlab.com/api/v4/projects/${PROJECT_IDS_LIST[4]}/repository/commits`,
-        {
-            headers: {
-                'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
-        }
-    });
-
-
-    if (isLoading || isLoading1 || isLoading2 || isLoading3 || isLoading4 || isLoading5)
-        return <p>Loading...</p>;
-
-
-    if (error || err1 || err2 || err3 || err4 || err5)
-        return (
-            <p>
-                Error! :(
-            </p>
-        );
-
+    if (isLoading) return <BallTriangle color="#96B3CC" height={20} width={20} />;
 
     return (
         <div id="gitlab-leaderboard" className="section">
-            <h2 id="title" style={title}>Leaderboard</h2>
-            {data.map(project => (
-                <div key={project.id}>
-                    <h3>
-                        {project.name}:
-                        
-                        <ul>
-                            {project.name === "Team1" ? commitData_team1.length
-                                : project.name === "Team2" ? commitData_team2.length
-                                : project.name === "Team3" ? commitData_team3.length
-                                : project.name === "Team4" ? commitData_team4.length
-                                : project.name === "Team5" ? commitData_team5.length
-                                : null}
-                        </ul>
-                    
-                    </h3>
-                </div>
+            <h1 id='title' style={padding}>Leaderboard</h1>
+            <h3 id="subtitle" style={subtitle}>
+                <span id="here">Here </span> are some fun little statistics of all your projects combined.
+                There may be more stats to come during the event!
+                Lastly, there may be an easter egg prize for the funniest commit or the most
+                productive commit... :)
+            </h3>
 
-            ))}
+           {/* Make two columns side by side */}
+            <Container fluid>
+            <Row>
+                <Col sm={6}><TeamOne /></Col>
+                <Col sm={6}><TeamTwo /></Col>
+            </Row>
+            <Row>
+                <Col sm={6}><TeamThree /></Col>
+                <Col sm={6}><TeamFour /></Col>
+            </Row>
+            <Row>
+                <Col sm={6}><TeamFive /></Col>
+            </Row>
+            </Container>
         </div>
     );
 }
 
-const title = {
-    padding: '2rem'
+const padding = {
+    padding: '0.2rem'
+}
+
+const subtitle = {
+    padding: '0.9rem',
+    paddingBottom: '4rem',
+    fontSize: '0.9rem',
+    fontWeight: '100',
+    lineHeight: '2rem',
 }

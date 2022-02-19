@@ -5,8 +5,11 @@ import Countdown from "./js/countdown.jsx";
 import Resources from "./js/resources.jsx";
 import Schedule from "./js/schedule.jsx";
 import Leaderboard from "./js/leaderboard.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "./favicons/favicons";
 import "./index.scss";
+import './fonts/ThirstyScriptExtraBold.otf';
 
 import {
     BrowserRouter as Router,
