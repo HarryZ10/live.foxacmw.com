@@ -12,10 +12,6 @@ $timer-space: 2vw;
     font-size: 4vw;
     width: 5%; // $timer-space;
   }
-
-  .timerComponent {
-    font-size: $countdown-font-size;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -30,5 +26,40 @@ $timer-space: 2vw;
 
   .timerComponent {
     width: $timer-component-width;
+    font-size: $countdown-font-size;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #timer {
+    font-size: 2.5vw;
+
+    span {
+      font-size: 3.5vw;
+      width: $timer-space;
+    }
+  }
+
+  .timerComponent {
+    width: 100px;
+    font-size: 36px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  #timer {
+    font-size: 2.5vw;
+
+    span {
+      font-size: 3.5vw;
+      width: $timer-space;
+    }
+  }
+
+  .timerComponent {
+    width: 40px;
+    font-size: 20px;
   }
 }
