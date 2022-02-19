@@ -154,7 +154,7 @@ module.exports = {
             },
           },
           {
-            test: /\.(js)$/,
+            test: /\.(js|mjs)$/,
             include: paths.appNodeModules,
             loader: require.resolve('babel-loader'),
             options: {
