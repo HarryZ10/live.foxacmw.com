@@ -5,7 +5,7 @@ import '../sass/timeline.scss';
 function Schedule() {
   return (
     <div id="schedule" className="section">
-      <h2 id="title" style={title}>Schedule</h2>
+      <h1 id="title" style={title}>Schedule</h1>
       <div className="schedule-embed-wrapper">
         <Timeline />
       </div>
@@ -14,7 +14,8 @@ function Schedule() {
 }
 
 const title = {
-  paddingTop: '2rem',
+  paddingTop: '3rem',
+  paddingBottom: '3rem',
 }
 
 export default Schedule;

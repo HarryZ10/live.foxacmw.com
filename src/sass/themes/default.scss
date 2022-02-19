@@ -6,11 +6,14 @@ $primary-color: #888888;
 $secondary-color: #888888;
 $tertiary-color: #888888;
 $box-color: #FFFFFF;
-$gold: #fed13e;
 $text-gray: #ADADAD;
 $text-color: #000000;
 $secondary-text-color: #000000;
 $primary-btn-text-color: #FFFFFF;
+
+$gold: #fed13e;
+$slate100: #96B3CC;
+$dark-navy: #102269;
 
 $light-gray: #DDD;
 $dark-gray: #535152;
@@ -24,6 +27,7 @@ $navbar-padding: 15px;
 $base-font-size: 18px;
 $medium-font-size: $base-font-size + 2;
 $heading-font-size: $base-font-size * 3;
+$countdown-font-size: ($base-font-size * 4);
 $subheading-font-size: $base-font-size * 1.5;
 $base-font-family: 'Avenir', sans-serif;
 

@@ -82,3 +82,10 @@ body {
 @import "sass/resources";
 @import "sass/schedule";
 @import "sass/leadership";
+
+@font-face {
+  font-family: "ThirstyScriptExtraBold";
+  src: local("ThirstyScriptExtraBold"),
+   url("../src/fonts/ThirstyScriptExtraBold.otf") format("truetype");
+  font-weight: bold;
+  }

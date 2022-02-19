@@ -8,4 +8,44 @@
 
 #title {
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: $dark-navy;
+    font-weight: 100;
 }
+
+#subtitle {
+    margin: auto 5rem;
+}
+
+#team-card {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 1.4rem;
+    margin: auto auto;
+}
+
+#team-card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 15px 0 $slate100;
+}
+
+span#here {
+    font-family: "ThirstyScriptExtraBold";
+    color: $slate100;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+  
+/* Smartphones (portrait) ----------- */  
+@media only screen and (max-width : 468px) {  
+
+    #subtitle {
+        margin: 0 auto;
+    }
+
+    span#here {
+        font-family: $base-font-family;
+        font-size: 0.9rem;
+        font-weight: 100;
+        color: $text-color;
+    }
+}  

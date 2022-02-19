@@ -13,7 +13,7 @@ function Countdown() {
       <hr />
       <div className="timeUnits">{timeline}</div>
       <h1 id="countdown-heading">
-        until hacking {new Date() < START_DATE ? "starts" : "ends"}!
+        Until <span id="countdown-desc">hacking</span> {new Date() < START_DATE ? "starts" : "ends"}!
       </h1>
     </div>
   );
