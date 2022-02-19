@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./js/header.jsx";
 import Countdown from "./js/countdown.jsx";
 import Resources from "./js/resources.jsx";
@@ -10,13 +11,6 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "./favicons/favicons";
 import "./index.scss";
 import './fonts/ThirstyScriptExtraBold.otf';
-
-import {
-    BrowserRouter as Router,
-    Route,
-    Switch,
-    Redirect,
-} from "react-router-dom";
 
 class Main extends React.Component {
 
@@ -33,18 +27,18 @@ class Main extends React.Component {
     }
 }
 
-function CustomRedirect({ from, to }) {
-    return (
-        <Route
-            exact
-            path={from}
-            component={() => {
-                window.location = to;
-                return null;
-            }}
-        />
-    );
-}
+// function CustomRedirect({ from, to }) {
+//     return (
+//         <Route
+//             exact
+//             path={from}
+//             component={() => {
+//                 window.location = to;
+//                 return null;
+//             }}
+//         />
+//     );
+// }
 
 function App() {
     return (

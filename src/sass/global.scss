@@ -10,6 +10,13 @@ $tablet-screen: 1023px;
 /* Base Styles */
 $section-width: 80vw;
 
+.lead {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: $base-font-family;
+  color: $dark-navy;
+}
+
 @mixin flex($flex-flow, $justify, $align) {
   display: flex;
   flex-flow: $flex-flow;
@@ -136,3 +143,4 @@ $section-width: 80vw;
     width: $section-width;
   }
 }
+

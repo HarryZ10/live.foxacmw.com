@@ -25,7 +25,7 @@ function Header() {
 function SocialMedia() {
   return(
     <div id="social-media">
-      <a style={{background: 'white'}} href="https://www.instagram.com/acmw.gfu" target="_blank"><FontAwesomeIcon style={{color: '#000'}} icon={faInstagram} /></a>
+      <a style={{background: 'white'}} href="https://www.instagram.com/acmw.gfu" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon style={{color: '#000'}} icon={faInstagram} /></a>
     </div>
   );
 }
