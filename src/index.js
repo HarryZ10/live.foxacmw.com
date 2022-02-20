@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+
 import Header from "./js/header.jsx";
 import Countdown from "./js/countdown.jsx";
 import Resources from "./js/resources.jsx";
 import Schedule from "./js/schedule.jsx";
 import Leaderboard from "./js/leaderboard.jsx";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Footer from "./js/footer.jsx";
+
 import "./favicons/favicons";
 import "./index.scss";
 import './fonts/ThirstyScriptExtraBold.otf';
@@ -21,7 +24,8 @@ class Main extends React.Component {
                 <Resources />
                 <p>Note: all times below are in PT (California time)</p>
                 <Schedule />
-                <Leaderboard />       
+                <Leaderboard />     
+                <Footer />  
             </div>
         );
     }
