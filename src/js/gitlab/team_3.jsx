@@ -30,7 +30,7 @@ export default function TeamOne() {
                     </div>
 
                     <div className="title-modal">
-                        <h1 id="modal-title">Team 1</h1>
+                        <h1 id="modal-title">Team 3</h1>
                     </div>
 
                     <div className="content-in-modal">
