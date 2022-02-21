@@ -10,6 +10,27 @@ $tablet-screen: 1023px;
 /* Base Styles */
 $section-width: 80vw;
 
+.arrowlink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: #000;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &:hover {
+        background: $light-gray;
+        color: #000;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
 .lead {
   font-size: 20px;
   font-weight: bold;

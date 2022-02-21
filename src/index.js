@@ -10,6 +10,7 @@ import Resources from "./js/resources.jsx";
 import Schedule from "./js/schedule.jsx";
 import Leaderboard from "./js/leaderboard.jsx";
 import Footer from "./js/footer.jsx";
+import PrivacyPolicy from "./js/privacypolicy.jsx";
 
 import "./favicons/favicons";
 import "./index.scss";
@@ -55,6 +56,9 @@ function App() {
                         to=""
                     /> */}
                     <Route exact path="/" component={Main} />
+                    <Route exact path="/schedule" component={Schedule} />
+                    <Route exact path="/leaderboard" component={Leaderboard} />
+                    <Route exact path="/privacy-policy" component={PrivacyPolicy} />
                 </Switch>
             </Router>
         </div>
