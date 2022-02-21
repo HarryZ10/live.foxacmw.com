@@ -5,10 +5,20 @@ import { BallTriangle } from  'react-loader-spinner'
 import TeamModal from '../teamModal'
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
+import {LinkedIn} from '../content.json';
+import Button from 'react-bootstrap/Button';
 
 
 
 export default function TeamOne() {
+
+    var content = [];
+    var team1 = LinkedIn.team1;
+
+    for (var i = 0; i < team1.length; i++) {
+        content.push(TeamInfo(team1[i].name, team1[i].url))
+    }
+
 
     const modalRef = useRef();
 
@@ -35,21 +45,20 @@ export default function TeamOne() {
                     </div>
 
                     <div className="content-in-modal">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Donec eget nunc eget nunc tincidunt aliquam.
-                            Sed euismod, urna eu tincidunt consectetur,
-                            nisi nisl tincidunt nisi, eget congue nisl nisi
-                            vitae nisl.
-                        </p>
+                        {content}
                     </div>
 
-                    <div className="footer-modal" style={{paddingTop: 20}}>
+                    <div className="footer-modal">
 
                         <p>
-                            <p><span className="lead">Total Commits:</span> {data.length} </p>
                             <p>
-                                <span className="lead">All Commits:</span>
+                                <span style={{
+                                fontFamily: 'ThirstyScriptExtraBold',
+                                fontSize: '1.5rem',
+                                color: '#96B3CC' 
+                                }}>{data.length} commits</span>
+                            </p>
+                            <p>
                                 {/* scroll box */}
                                 <div id="scrollbox">
                                     <SimpleBar style={{ maxHeight: 200, paddingTop: 10, paddingBottom: 10 }}>
@@ -80,6 +89,22 @@ export default function TeamOne() {
             </Card>
         </div>
     )
+}
+
+
+function TeamInfo(name, link) {
+
+    return (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+            <Button
+                variant="primary"
+                className="button-team"
+            >
+                {name}
+            </Button>
+        </a>
+    );
+
 }
 
 const title = {

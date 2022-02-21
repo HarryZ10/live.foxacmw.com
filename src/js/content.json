@@ -1,2 +1,94 @@
 {
+    "LinkedIn": {
+        "team1": [
+            {
+                "name": "Daniel",
+                "url": "https://www.linkedin.com/in/daniel-beachy/"
+            },
+            {
+                "name": "Alex",
+                "url": "https://www.linkedin.com/in/alex-c-mills/"
+            },
+            {
+                "name": "Conner",               
+                "url": "#"
+            },
+            {
+                "name": "Dominic",               
+                "url": "#"
+            }
+        ],
+        "team2": [
+            {
+                "name": "Trey",               
+                "url": "https://linkedin.com/in/trey-moen"
+            },
+            {
+                "name": "Rylan",               
+                "url": "http://www.linkedin.com/rschubkegel/"
+            },
+            {
+                "name": "Adam",               
+                 "url": "#"
+            },
+            {
+                "name": "Blake",               
+                "url": "#"
+            }
+        ],
+        "team3": [
+            {
+                "name": "Caleb",               
+                "url": "#"
+            },
+            {
+                "name": "Tyler",               
+                "url": "#"
+            },
+            {
+                "name": "",               
+                "url": "#"
+            },
+            {
+                "name": "",               
+                "url": "#"
+            }
+        ],
+        "team4": [
+            {
+                "name": "Olivia",               
+                "url": "#"
+            },
+            {
+                "name": "Cecilia",               
+                "url": "https://www.linkedin.com/in/ceci-kurdelak-66b701201/"
+            },
+            {
+                "name": "",               
+                "url": "#"
+            },
+            {
+                "name": "",               
+                "url": "#"
+            }
+        ],
+        "team5": [
+            {
+                "name": "Marvin",               
+                "url": "https://www.linkedin.com/in/marvinhozi/"
+            },
+            {
+                "name": "",               
+                "url": "#"
+            },
+            {
+                "name": "",               
+                "url": "#"
+            },
+            {
+                "name": "",               
+                "url": "#"
+            }
+        ]
+    }
 }

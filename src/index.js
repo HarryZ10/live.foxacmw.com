@@ -32,18 +32,20 @@ class Main extends React.Component {
     }
 }
 
-// function CustomRedirect({ from, to }) {
-//     return (
-//         <Route
-//             exact
-//             path={from}
-//             component={() => {
-//                 window.location = to;
-//                 return null;
-//             }}
-//         />
-//     );
-// }
+function CustomRedirect({ from, to }) {
+    return (
+        <Route
+            exact
+            path={from}
+            component={() => {
+                window.location = to;
+
+                // redirect to home
+                return null;
+            }}
+        />
+    );
+}
 
 function App() {
     return (
@@ -51,10 +53,10 @@ function App() {
             <Header />
             <Router>
                 <Switch>
-                    {/* <CustomRedirect
-                        from="/faq"
-                        to=""
-                    /> */}
+                    <CustomRedirect
+                        from="/code-of-conduct"
+                        to="https://docs.google.com/document/d/1Hi5ZcmiPWlOHmlU4PL8dw2ptkRCGDnMDkiTp01yxloU/edit"
+                    />
                     <Route exact path="/" component={Main} />
                     <Route exact path="/schedule" component={Schedule} />
                     <Route exact path="/leaderboard" component={Leaderboard} />

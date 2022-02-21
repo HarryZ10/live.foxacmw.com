@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from "react-intersection-observer";
 
 
 const timelineData = [
@@ -85,53 +87,59 @@ const timelineData = [
     }
 ]
 
-const TimelineItem = ({ data }) => (
-    <div className="timeline-item">
-        <div className="timeline-item-content">
-            <span className="tag" style={{ background: data.category.color }}>
-                {data.category.tag}
-            </span>
-            <time>{data.date}</time>
-            <p>{data.text}</p>
-            {data.description && (
-                <p>{data.description}</p>
-            )}
-            {data.link && !data.link.func && (
-                
-                <a
-                    href={data.link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    {data.link.text}
-                </a>
-            )}
 
-            {/* make an alert to screen */}
+function TimelineItem (data) {
 
-            {data.link && data.link.func && (
-                <a
-                    onClick={() => { navigator.clipboard.writeText(data.link.text)
-                    alert(`Copied ${data.link.text} to clipboard`) 
+    return (
+        <div className="timeline-item">
+            <div className="timeline-item-content">
+                <span className="tag" style={{ background: data.category.color }}>
+                    {data.category.tag}
+                </span>
+                <time>{data.date}</time>
+                <p>{data.text}</p>
+                {data.description && (
+                    <p>{data.description}</p>
+                )}
+                {data.link && !data.link.func && (
                     
-                }}
-                >
-                    {data.link.text}
-                </a> 
-            )}
-            <span className="circle" />
-        </div>
-    </div>
-);
+                    <a
+                        href={data.link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {data.link.text}
+                    </a>
+                )}
 
-const Timeline = () =>
+                {/* make an alert to screen */}
+
+                {data.link && data.link.func && (
+                    <a
+                        onClick={() => { navigator.clipboard.writeText(data.link.text)
+                        alert(`Copied ${data.link.text} to clipboard`) 
+                        
+                    }}
+                    >
+                        {data.link.text}
+                    </a> 
+                )}
+                <span className="circle" />
+            </div>
+        </div>
+    );
+}
+
+const Timeline = () => 
     timelineData.length > 0 && (
         <div className="timeline-container">
             {timelineData.map((data, idx) => (
-                <TimelineItem data={data} key={idx} />
+                <TimelineItem { ...data } idx={idx} />
             ))}
         </div>
     );
+
+    
 
 
 // export Timeline
