@@ -31,6 +31,27 @@ $section-width: 80vw;
     }
 }
 
+.arrowlink.red {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: rgb(202, 70, 70);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  &:hover {
+      background: $light-gray;
+      color: rgb(202, 70, 70)
+  }
+
+  &:focus {
+      outline: none;
+  }
+}
+
 .lead {
   font-size: 15px;
   font-weight: bold;

@@ -8,23 +8,18 @@ export default function PrivacyPolicy() {
         <div id="privacypolicy" className="section">
             <h1>Privacy Policy</h1>
 
-            <p>At FOXACM, accessible from
-                <span>
-                    <a className="arrowlink" href="https://live.foxacmw.com" style={{ textDecoration: 'None' }} target="_blank" rel="noopener noreferrer">
-                    https://live.foxacmw.com</a>
-                </span> and 
-                <span>
-                    <a className='arrowlink' href="https://foxacmw.com" target="_blank" rel="noopener noreferrer">
-                        https://foxacmw.com</a>
-                </span>, one of our main priorities is the privacy of our visitors.
+            <p style={{ fontSize: '0.9rem', color: 'gray'}}><em>Last updated: 2/23/2022 at 13:43 PT</em></p>
+            <p style={{ fontSize: '0.9rem', color: 'gray', padding: 0 }}>This document and enforcement of these policies are maintained by our Data Protection Officer.</p>
+
+            <p>At <span className="arrowlink">foxacmw.com</span> and its relative subdomains, one of our main priorities is the privacy of our visitors.
                 This Privacy Policy document contains types of information that is collected
-                and recorded by FOXACM and how we use it.
+                and recorded by <span className="arrowlink">foxacmw.com</span> and how we use it.
             </p>
 
             <p>If you have additional questions or require more information about
-                our Privacy Policy, do not hesitate to contact us. This Privacy Policy
+                our Privacy Policy, do not hesitate to <br/><span><a className="arrowlink" href="mailto:acm.gfu@gmail.com">contact us</a></span>. This Privacy Policy
                 applies only to our online activities and is valid for visitors to our
-                website with regards to the information that they shared and/or collect in FOXACM.
+                website with regards to the information that they shared and/or collect in <span className="arrowlink">foxacmw.com</span>.
                 This policy is not applicable to any information collected offline or via
                 channels other than this website.
                 </p>
@@ -36,7 +31,7 @@ export default function PrivacyPolicy() {
             <h2>Information we collect</h2>
 
             <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
-            <p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+            <p>If you  <span><a className="arrowlink" href="mailto:acm.gfu@gmail.com">contact us</a></span>  directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
             <p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
 
             <h2>How we use your information</h2>
@@ -55,22 +50,8 @@ export default function PrivacyPolicy() {
 
             <h2>Log Files</h2>
 
-            <p>FOXACM follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+            <p><span className="arrowlink">foxacmw.com</span> follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
 
-
-            <h2>Advertising Partners Privacy Policies</h2>
-
-            <p>You may consult this list to find the Privacy Policy for each of the advertising partners of FOXACM.</p>
-
-            <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on FOXACM, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
-
-            <p>Note that FOXACM has no access to or control over these cookies that are used by third-party advertisers.</p>
-
-            <h2>Third Party Privacy Policies</h2>
-
-            <p>FOXACM's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
-
-            <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
 
             <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
 
@@ -78,7 +59,7 @@ export default function PrivacyPolicy() {
             <p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
             <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
             <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
-            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please <span><a className="arrowlink" href="mailto:acm.gfu@gmail.com">contact us</a></span>.</p>
 
             <h2>GDPR Data Protection Rights</h2>
 
@@ -89,13 +70,13 @@ export default function PrivacyPolicy() {
             <p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
             <p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
             <p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
-            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+            <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at <span><a className="arrowlink" href="mailto:acm.gfu@gmail.com">acm.gfu@gmail.com</a></span>.</p>
 
             <h2>Children's Information</h2>
 
             <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
 
-            <p>FOXACM does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+            <p><span className="arrowlink">foxacmw.com</span> does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to <br/><span><a className="arrowlink red" href="mailto:acm.gfu@gmail.com">contact us immediately</a></span>  and we will do our best efforts to promptly remove such information from our records.</p>
         </div>
     );
 }

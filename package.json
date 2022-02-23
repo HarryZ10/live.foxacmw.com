@@ -54,6 +54,7 @@
     "fs-extra": "3.0.1",
     "fuse.js": "^3.3.0",
     "gsap": "^2.0.2",
+    "html-loader": "^3.1.0",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "mongoose": "^6.2.1",
