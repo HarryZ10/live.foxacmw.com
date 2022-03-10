@@ -1,89 +1,192 @@
-import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from "react-intersection-observer";
-
+import React from 'react';
 
 const timelineData = [
     {
-        text: 'Welcome to the Code Jam!',
-        date: 'April 1, 2022 at 5:00pm',
+        text: 'Doors open for Hackers and Mentors!',
+        date: 'April 1, 2022 at 4:15pm',
         category: {
-			tag: 'canyon',
-			color: '#FFDB14'
-		},
-        description: 'Hear more about what to expect at the Code Jam.',
+            tag: 'canyon',
+            color: '#FFDB14'
+        },
+        description: 'Get excited and hyped for the Code Jam launch!',
     },
     {
-        text: 'Hosting Workshop',
-        date: 'April 1, 2022 at 6:15pm',
+        text: 'Hype Code Jam Kickoff!',
+        date: 'April 1, 2022 at 4:30pm (30 minutes)',
         category: {
-			tag: 'workshops',
-			color: '#e17b77'
-		},
+            tag: 'canyon',
+            color: '#FFDB14'
+        },
+        description: 'Hear more about what to expect and learn for the Code Jam.',
+    },
+    {
+        text: 'Team Building Activity',
+        date: 'April 1, 2022 at 5:00pm (15 minutes)',
+        category: {
+            tag: 'canyon',
+            color: '#FFDB14'
+        },
+        description: 'Bring on team morale!',
+    },
+    {
+        text: 'Workshop: Introduction to Hosting',
+        date: 'April 1, 2022 at 5:30pm (30 minutes)',
+        category: {
+            tag: 'canyon',
+            color: '#FFDB14'
+        },
         link: {
-            text: 'TBA/Discord Classroom'
+            text: 'Canyon Commons'
         }
     },
     {
-        text:
-            'Minecraft Server Running!',
-        date: 'April 1, 2022 at 11:30pm',
-        description: "Server is Live at 11:30pm",
+        text: 'Hacking starts now!',
+        date: 'April 1, 2022 at 6:00pm',
         category: {
-			tag: 'games',
-			color: '#018f69'
-		},
+            tag: 'code jam',
+            color: '#e17b77'
+        },
+        link: {
+            url: '#',
+            text: 'Team Check-In Form (required)'
+        }
+    },
+    {
+        text: 'Optional Entertainment: Lip Sync Competition 2022',
+        date: 'April 1, 2022 at 7-9pm',
+        category: {
+            tag: 'entertainment',
+            color: '#018f69'
+        },
+        link: {
+            text: 'Bauman Auditorium'
+        }
+    },
+    {
+        text: 'Late Night Help Desk Hours',
+        date: 'April 1, 2022 at 9:15pm (3 hours)',
+        category: {
+            tag: 'help desk',
+            color: '#545ecc'
+        },
+        link: {
+            text: 'Discord/Canyon'
+        }
+    },
+    {
+        text: 'Minecraft Server Running!',
+        date: 'April 1, 2022 at 11:00pm',
+        category: {
+            tag: 'entertainment',
+            color: '#018f69'
+        },
         link: {
             text: 'codejam.minehut.gg',
-            func: 'navigator.clipboard.writeText(this.state.textToCopy)'
+            func: true
         }
     },
     {
-        text: 'Submission Deadline',
-        date: 'April 03, 2022 at 1:00am',
+        text: 'Twilight Help Desk Hour (limited)',
+        date: 'April 2, 2022 at 2:00am (3 hours)',
         category: {
-			tag: 'submissions',
-			color: '#018f69'
-		},
+            tag: 'help desk',
+            color: '#545ecc'
+        },
+        link: {
+            text: 'Discord/team location'
+        }
+    },
+    {
+        text: 'Open Help Desk Hours',
+        date: 'April 2, 2022 at 7:00am (until 6pm)',
+        category: {
+            tag: 'help desk',
+            color: '#545ecc'
+        },
+        link: {
+            text: 'Discord/team location'
+        }
+    },
+    {
+        text: 'Open Help Desk Hours',
+        date: 'April 2, 2022 at 9:30pm (until 2am)',
+        category: {
+            tag: 'help desk',
+            color: '#545ecc'
+        },
+        link: {
+            text: 'Discord/team location'
+        }
+    },
+    {
+        text: 'Hacking Ends... Code Submission Deadline',
+        date: 'April 03, 2022 at 12:15am',
+        category: {
+            tag: 'submissions',
+            color: '#6a3e87'
+        },
+        description: 'Submit all code to your respective Gitlab repository.'
+    },
+    {
+        text: 'Presentation Submission Deadline',
+        date: 'April 03, 2022 at 9:00am',
+        category: {
+            tag: 'submissions',
+            color: '#6a3e87'
+        },
         link: {
             url: 'https://foxacmw.devpost.com',
             text: 'Submit a formal presentation to Devpost'
         }
     },
     {
-        text: 'Judging period begins',
-        date: 'April 03, 2022 at 2:00pm',
+        text: 'Celebratory Brunch',
+        date: 'April 03, 2022 at 12:00pm',
         category: {
-            tag: 'judging',
-            color: '#018f69'
-        },
-        description: 'Please hang tight, we are judging!',
-    },
-    {
-        text: 'Judging period ends',
-        date: 'April 03, 2022 at 3:00pm',
-        category: {
-            tag: 'judging',
-            color: '#018f69'
+            tag: 'canyon',
+            color: '#FFDB14'
         }
     },
     {
-        text: 'Celebratory Dinner',
-        date: 'April 03, 2022 at 4:30pm',
+        text: 'Networking Event',
+        date: 'April 03, 2022 at 1:00pm',
         category: {
             tag: 'canyon',
             color: '#FFDB14'
         },
-        description: 'Free for all in the Canyon Commons private dining room.',
+        description: 'Come meet all the working alumni & mentors, and other hackers that have helped put this on for you all!',
     },
     {
-        text: 'Award Ceremony',
-        date: 'April 03, 2022 at 6:00pm',
+        text: 'Annual Code Jam Showcase 2022',
+        date: 'April 03, 2022 at 2:15pm (45 minutes)',
         category: {
             tag: 'canyon',
             color: '#FFDB14'
         },
-        description: 'Held in the Canyon Commons private dining room.',
+    },
+    {
+        text: 'Judging period begins',
+        date: 'April 03, 2022 at 3:15pm (20 minutes)',
+        category: {
+            tag: 'judging',
+            color: '#6a3e87'
+        },
+    },
+    {
+        text: 'Judging period ends',
+        date: 'April 03, 2022 at 3:40pm',
+        category: {
+            tag: 'judging',
+            color: '#6a3e87'
+        }
+    },
+    {
+        text: 'Award Ceremony & Team Awards',
+        date: 'April 03, 2022 at 4:00pm (50 minutes)',
+        category: {
+            tag: 'canyon',
+            color: '#FFDB14'
+        },
     }
 ]
 
@@ -116,8 +219,8 @@ function TimelineItem (data) {
 
                 {data.link && data.link.func && (
                     <a
-                        onClick={() => { navigator.clipboard.writeText(data.link.text)
-                        alert(`Copied ${data.link.text} to clipboard`) 
+                        onClick={() => { navigator.clipboard.writeText('codejam.minehut.gg')
+                        alert(`Copied ${data.link.text} to clipboard successfully!`) 
                         
                     }}
                     >
