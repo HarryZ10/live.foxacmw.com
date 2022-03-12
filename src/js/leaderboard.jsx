@@ -7,6 +7,7 @@ import TeamTwo from './gitlab/team_2';
 import TeamThree from './gitlab/team_3';
 import TeamFour from './gitlab/team_4';
 import TeamFive from './gitlab/team_5';
+import TeamSix from './gitlab/team_6';
 
 export default function Leaderboard() {
 
@@ -41,6 +42,9 @@ export default function Leaderboard() {
             <Row>
                 <Col sm={6}>
                     <TeamFive/>
+                </Col>
+                <Col sm={6}>
+                    <TeamSix/>
                 </Col>
             </Row>
             </Container>

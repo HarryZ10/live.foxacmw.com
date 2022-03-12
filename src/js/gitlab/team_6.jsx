@@ -8,21 +8,19 @@ import 'simplebar/dist/simplebar.min.css';
 import {LinkedIn} from '../content.json';
 import Button from 'react-bootstrap/Button';
 
-
-
-export default function TeamFive() {
+export default function TeamSix() {
 
     var content = [];
-    var team5 = LinkedIn.team5;
+    var team6 = LinkedIn.team6;
 
-    for (var i = 0; i < team5.length; i++) {
-        content.push(TeamInfo(team5[i].name, team5[i].url))
+    for (var i = 0; i < team6.length; i++) {
+        content.push(TeamInfo(team6[i].name, team6[i].url))
     }
 
     const modalRef = useRef();
 
     const { isLoading, error, data}  = useFetch(
-        `https://gitlab.com/api/v4/projects/33664488/repository/commits`,
+        `https://gitlab.com/api/v4/projects/34362988/repository/commits`,
         {
             headers: {
                 'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
@@ -83,10 +81,10 @@ export default function TeamFive() {
             
             <Card id="team-card" style={{ width: '80%', marginBottom: '2rem' }}>
             <Card.Body onClick={() => modalRef.current.open()} style={{ paddingTop: '1.2rem', paddingBottom: '1.2rem'}}>
-                <Card.Title style={title}>Team 5</Card.Title>
+                <Card.Title style={title}>Team 6</Card.Title>
                 <Card.Subtitle style={subtitle} className="mb-2 text-muted"># of Commits: {data.length}</Card.Subtitle>
                 <Card.Text style={subtitle}>
-                {data === undefined ? <p style={warning}>No commits yet!</p> : <p>Commit: "{data && data[Math.floor(Math.random() * data.length)].message}"</p>}
+                {data ? <p style={warning}>No commits yet!</p> : <p>Commit: "{data && data[Math.floor(Math.random() * data.length)].message}"</p>}
 
                 </Card.Text>
             </Card.Body>

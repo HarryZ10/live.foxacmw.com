@@ -10,12 +10,10 @@
                 "url": "https://www.linkedin.com/in/alex-c-mills/"
             },
             {
-                "name": "Conner",               
-                "url": "#"
+                "name": "Conner"             
             },
             {
-                "name": "Dominic",               
-                "url": "#"
+                "name": "Dominic"              
             }
         ],
         "team2": [
@@ -29,65 +27,69 @@
             },
             {
                 "name": "Adam",               
-                 "url": "#"
+                 "url": "https://www.linkedin.com/in/adam-hearn/"
             },
             {
-                "name": "Blake",               
-                "url": "#"
+                "name": "Blake"
             }
         ],
         "team3": [
             {
-                "name": "Caleb",               
-                "url": "#"
+                "name": "Caleb"
             },
             {
-                "name": "Tyler",               
-                "url": "#"
+                "name": "Tyler"
             },
             {
-                "name": "",               
-                "url": "#"
+                "name": "Ashley"
             },
             {
-                "name": "",               
-                "url": "#"
+                "name": "Kelly"
             }
         ],
         "team4": [
             {
-                "name": "Olivia",               
-                "url": "#"
+                "name": "Olivia"
             },
             {
-                "name": "Cecilia",               
+                "name": "Cecilia (Cici)",               
                 "url": "https://www.linkedin.com/in/ceci-kurdelak-66b701201/"
             },
             {
-                "name": "",               
-                "url": "#"
+                "name": "Marvin Hozi",               
+                "url": "https://www.linkedin.com/in/marvinhozi/"
             },
             {
-                "name": "",               
-                "url": "#"
+                "name": "Josiah"
             }
         ],
         "team5": [
             {
-                "name": "Marvin",               
-                "url": "https://www.linkedin.com/in/marvinhozi/"
+                "name": "Kevin"
             },
             {
-                "name": "",               
-                "url": "#"
+                "name": "Matthew"
             },
             {
-                "name": "",               
-                "url": "#"
+                "name": "Dylan"
             },
             {
-                "name": "",               
-                "url": "#"
+                "name": "Luke"
+            }
+        ],
+        "team6": [
+            {
+                "name": "Josh",               
+                "url": "https://www.linkedin.com/in/joshua-m-hicks/"
+            },
+            {
+                "name": "Connor"
+            },
+            {
+                "name": "Nicolle"
+            },
+            {
+                "name": "Blake"
             }
         ]
     }

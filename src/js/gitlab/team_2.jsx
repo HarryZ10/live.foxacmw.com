@@ -10,7 +10,7 @@ import Button from 'react-bootstrap/Button';
 
 
 
-export default function TeamOne() {
+export default function TeamTwo() {
 
     var content = [];
     var team2 = LinkedIn.team2;
