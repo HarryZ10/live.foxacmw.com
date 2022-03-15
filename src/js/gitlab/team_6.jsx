@@ -40,7 +40,7 @@ export default function TeamSix() {
                     </div>
 
                     <div className="title-modal">
-                        <h1 id="modal-title">Team 5</h1>
+                        <h1 id="modal-title">Team 6</h1>
                     </div>
 
                     <div className="content-in-modal">
