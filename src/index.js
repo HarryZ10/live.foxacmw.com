@@ -22,11 +22,11 @@ class Main extends React.Component {
         return (
             <div>
                 <Countdown />
-                <Resources />
+                {/* <Resources /> */}
                 <p>Note: all times below are in PT (California time)</p>
-                <Schedule />
-                <Leaderboard />     
-                <Footer />  
+                {/* <Schedule /> */}
+                {/* <Leaderboard />      */}
+                <Footer />
             </div>
         );
     }
