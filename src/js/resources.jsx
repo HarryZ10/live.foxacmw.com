@@ -6,9 +6,9 @@ function Resources() {
   return (
     <div id="resources" className="section">
       {/* Uncomment when going live */}
-      {/* <a href="https://discord.gg/ScUsTqchMf"> */}
-      <a>
-        <div className="resource-1 disabled">
+      <a href="https://discord.gg/ScUsTqchMf">
+      {/* <a> */}
+        <div className="resource-1">
           <img src={discordIcon} alt="discord icon" className="resource-icon" />
           Discord
         </div>

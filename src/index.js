@@ -22,10 +22,10 @@ class Main extends React.Component {
         return (
             <div>
                 <Countdown />
-                {/* <Resources /> */}
+                <Resources />
                 <p>Note: all times below are in PT (California time)</p>
                 {/* <Schedule /> */}
-                {/* <Leaderboard />      */}
+                {/* <Leaderboard /> */}
                 <Footer />
             </div>
         );
@@ -39,8 +39,6 @@ function CustomRedirect({ from, to }) {
             path={from}
             component={() => {
                 window.location = to;
-
-                // redirect to home
                 return null;
             }}
         />
@@ -59,8 +57,8 @@ function App() {
                     />
                     <Route exact path="/" component={Main} />
                     {/* <Route exact path="/schedule" component={Schedule} />
-                    <Route exact path="/leaderboard" component={Leaderboard} />
-                    <Route exact path="/privacy-policy" component={PrivacyPolicy} /> */}
+                    <Route exact path="/leaderboard" component={Leaderboard} /> */}
+                    <Route exact path="/privacy-policy" component={PrivacyPolicy} />
                 </Switch>
             </Router>
         </div>

@@ -34,23 +34,21 @@
             }
         ],
         "team3": [
-            {
-                "name": "Caleb"
-            },
-            {
-                "name": "Tyler"
-            },
+            
             {
                 "name": "Ashley"
             },
             {
                 "name": "Kelly"
-            }
-        ],
-        "team4": [
+            },
             {
                 "name": "Olivia"
             },
+            {
+                "name": "Josiah"
+            }
+        ],
+        "team4": [
             {
                 "name": "Cecilia (Cici)",               
                 "url": "https://www.linkedin.com/in/ceci-kurdelak-66b701201/"
@@ -60,7 +58,10 @@
                 "url": "https://www.linkedin.com/in/marvinhozi/"
             },
             {
-                "name": "Josiah"
+                "name": "Caleb"
+            },
+            {
+                "name": "Tyler"
             }
         ],
         "team5": [
