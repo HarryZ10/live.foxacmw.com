@@ -163,7 +163,7 @@ const timelineData = [
     },
     {
         text: 'Award Ceremony & Team Awards',
-        date: 'April 03, 2022 at 4:00pm (50 minutes)',
+        date: 'April 03, 2022 at 3:30pm (45 minutes)',
         category: {
             tag: 'EHS 102',
             color: '#FFDB14'
