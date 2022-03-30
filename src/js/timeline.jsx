@@ -34,9 +34,6 @@ const timelineData = [
         category: {
             tag: 'EHS 102',
             color: '#FFDB14'
-        },
-        link: {
-            text: 'Canyon Commons'
         }
     },
     {
@@ -70,7 +67,7 @@ const timelineData = [
             color: '#545ecc'
         },
         link: {
-            text: 'Discord/Canyon'
+            text: 'Discord'
         }
     },
     {
