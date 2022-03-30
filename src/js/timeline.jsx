@@ -2,28 +2,28 @@ import React from 'react';
 
 const timelineData = [
     {
-        text: 'Doors open for Hackers and Mentors!',
+        text: 'Doors open!',
         date: 'April 1, 2022 at 4:15pm',
         category: {
-            tag: 'canyon',
+            tag: 'EHS 102',
             color: '#FFDB14'
         },
         description: 'Get excited and hyped for the Code Jam launch!',
     },
     {
-        text: 'Hype Code Jam Kickoff!',
+        text: 'Code Jam Kickoff',
         date: 'April 1, 2022 at 4:30pm (30 minutes)',
         category: {
-            tag: 'canyon',
+            tag: 'EHS 102',
             color: '#FFDB14'
         },
         description: 'Hear more about what to expect and learn for the Code Jam.',
     },
     {
         text: 'Team Building Activity',
-        date: 'April 1, 2022 at 5:00pm (15 minutes)',
+        date: 'April 1, 2022 at 5:00pm (20 minutes)',
         category: {
-            tag: 'canyon',
+            tag: 'EHS 102',
             color: '#FFDB14'
         },
         description: 'Bring on team morale!',
@@ -32,7 +32,7 @@ const timelineData = [
         text: 'Workshop: Introduction to Hosting',
         date: 'April 1, 2022 at 5:30pm (30 minutes)',
         category: {
-            tag: 'canyon',
+            tag: 'EHS 102',
             color: '#FFDB14'
         },
         link: {
@@ -120,7 +120,7 @@ const timelineData = [
     },
     {
         text: 'Hacking Ends... Code Submission Deadline',
-        date: 'April 03, 2022 at 12:15am',
+        date: 'April 03, 2022 at 1:15am',
         category: {
             tag: 'submissions',
             color: '#6a3e87'
@@ -129,7 +129,7 @@ const timelineData = [
     },
     {
         text: 'Presentation Submission Deadline',
-        date: 'April 03, 2022 at 9:00am',
+        date: 'April 03, 2022 at 8:00am',
         category: {
             tag: 'submissions',
             color: '#6a3e87'
@@ -143,7 +143,7 @@ const timelineData = [
         text: 'Celebratory Brunch',
         date: 'April 03, 2022 at 12:00pm',
         category: {
-            tag: 'canyon',
+            tag: 'EHS 102',
             color: '#FFDB14'
         }
     },
@@ -151,40 +151,24 @@ const timelineData = [
         text: 'Networking Event',
         date: 'April 03, 2022 at 1:00pm',
         category: {
-            tag: 'canyon',
+            tag: 'EHS 102',
             color: '#FFDB14'
         },
         description: 'Come meet all the working alumni & mentors, and other hackers that have helped put this on for you all!',
     },
     {
         text: 'Annual Code Jam Showcase 2022',
-        date: 'April 03, 2022 at 2:15pm (45 minutes)',
+        date: 'April 03, 2022 at 2pm (45 minutes)',
         category: {
-            tag: 'canyon',
+            tag: 'EHS 102',
             color: '#FFDB14'
         },
-    },
-    {
-        text: 'Judging period begins',
-        date: 'April 03, 2022 at 3:15pm (20 minutes)',
-        category: {
-            tag: 'judging',
-            color: '#6a3e87'
-        },
-    },
-    {
-        text: 'Judging period ends',
-        date: 'April 03, 2022 at 3:40pm',
-        category: {
-            tag: 'judging',
-            color: '#6a3e87'
-        }
     },
     {
         text: 'Award Ceremony & Team Awards',
         date: 'April 03, 2022 at 4:00pm (50 minutes)',
         category: {
-            tag: 'canyon',
+            tag: 'EHS 102',
             color: '#FFDB14'
         },
     }
