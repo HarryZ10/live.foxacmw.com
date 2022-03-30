@@ -15,10 +15,7 @@ export default function Leaderboard() {
         <div id="gitlab-leaderboard" className="section">
             <h1 id='title' style={padding}>Leaderboard</h1>
             <h3 id="subtitle" style={subtitle}>
-                <span id="here">Here </span> are some fun little statistics of all your projects combined.
-                There may be more stats to come during the event!
-                Lastly, there may be an easter egg prize for the funniest commit or the most
-                productive commit... :)
+                <span id="here">Here </span> shows random commmit messages and # of commits from each project and a modal that shows team information.
             </h3>
 
            {/* Make two columns side by side */}

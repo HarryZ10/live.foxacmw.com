@@ -16,7 +16,7 @@
                 "name": "Dominic"              
             }
         ],
-        "team2": [
+        "team3": [
             {
                 "name": "Trey",               
                 "url": "https://linkedin.com/in/trey-moen"
@@ -33,7 +33,7 @@
                 "name": "Blake"
             }
         ],
-        "team3": [
+        "team2": [
             
             {
                 "name": "Ashley"
@@ -49,10 +49,6 @@
             }
         ],
         "team4": [
-            {
-                "name": "Ceci",               
-                "url": "https://www.linkedin.com/in/ceci-kurdelak-66b701201/"
-            },
             {
                 "name": "Caleb"
             },
