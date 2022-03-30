@@ -24,7 +24,7 @@ class Main extends React.Component {
                 <Countdown />
                 <Resources />
                 <p>Note: all times below are in PT (California time)</p>
-                {/* <Schedule /> */}
+                <Schedule />
                 <Leaderboard />
                 <Footer />
             </div>
@@ -56,7 +56,7 @@ function App() {
                         to="https://docs.google.com/document/d/1Hi5ZcmiPWlOHmlU4PL8dw2ptkRCGDnMDkiTp01yxloU/edit"
                     />
                     <Route exact path="/" component={Main} />
-                    {/* <Route exact path="/schedule" component={Schedule} /> */}
+                    <Route exact path="/schedule" component={Schedule} />
                     <Route exact path="/leaderboard" component={Leaderboard} />
                     <Route exact path="/privacy-policy" component={PrivacyPolicy} />
                 </Switch>
