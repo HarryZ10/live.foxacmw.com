@@ -139,8 +139,9 @@ const timelineData = [
     {
         text: 'Celebratory Brunch',
         date: 'April 03, 2022 at 12:00pm',
+        description: 'Come to the IRC for a celebratory brunch!',
         category: {
-            tag: 'EHS 102',
+            tag: 'Intercultural Resource Center',
             color: '#FFDB14'
         }
     },
