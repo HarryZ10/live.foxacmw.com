@@ -20,13 +20,23 @@ export default function TeamThree() {
     }
     const modalRef = useRef();
 
+    // increment page count every 100 items fetched
+    const [page, setPage] = React.useState(1);
+
     const { isLoading, error, data}  = useFetch(
-        `https://gitlab.com/api/v4/projects/33664485/repository/commits`,
+        `https://gitlab.com/api/v4/projects/33664485/repository/commits?ref_name=main&since=2022-04-02T01:00:00.000Z&until=2022-04-03T08:15:00.000Z&all=true&per_page=500&page=${page}`,
         {
             headers: {
                 'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
         }
     });
+
+    // for every 100 items fetched, increment page count
+    React.useEffect(() => {
+        if (data && data.length === 100) {
+            setPage(page + 2);
+        }
+    }, [data]);
 
     if (isLoading) return <BallTriangle color="#96B3CC" height={20} width={20} />;
 
