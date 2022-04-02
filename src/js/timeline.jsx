@@ -59,20 +59,19 @@ const timelineData = [
     //         text: 'Bauman Auditorium'
     //     }
     // },
+    // {
+    //     text: 'Late Night Help Desk Hours',
+    //     date: 'April 1, 2022 at 9:45-10:50pm',
+    //     category: {
+    //         tag: 'help desk',
+    //         color: '#545ecc'
+    //     },
+    //     link: {
+    //         text: 'Discord'
+    //     }
+    // },
     {
-        text: 'Late Night Help Desk Hours',
-        date: 'April 1, 2022 at 9:45-10:50pm',
-        category: {
-            tag: 'help desk',
-            color: '#545ecc'
-        },
-        link: {
-            text: 'Discord'
-        }
-    },
-    {
-        text: 'Minecraft Server Running!',
-        date: 'April 1, 2022 at 11:00pm',
+        text: 'Minecraft Server!',
         category: {
             tag: 'entertainment',
             color: '#018f69'
@@ -84,7 +83,7 @@ const timelineData = [
     },
     {
         text: 'Twilight Help Desk Hour (limited)',
-        date: 'April 2, 2022 at 2:00am (3 hours)',
+        date: 'April 2, 2022 at 1-3am (2 hours)',
         category: {
             tag: 'help desk',
             color: '#545ecc'
@@ -92,15 +91,15 @@ const timelineData = [
     },
     {
         text: 'Open Help Desk Hours',
-        date: 'April 2, 2022 at 7:00am (until 6pm)',
+        date: 'April 2, 2022 at 8:00am (until 10pm)',
         category: {
             tag: 'help desk',
             color: '#545ecc'
         }
     },
     {
-        text: 'Open Help Desk Hours',
-        date: 'April 2, 2022 at 9:30pm (until 2am)',
+        text: 'Twilight Help Desk Hours',
+        date: 'April 3, 2022 at 11pm-1am (limited)',
         category: {
             tag: 'help desk',
             color: '#545ecc'
@@ -137,8 +136,8 @@ const timelineData = [
         }
     },
     {
-        text: 'Software Engineering Panel',
-        date: 'April 03, 2022 at 1:00pm',
+        text: 'SWE & Professional Panel',
+        date: 'April 03, 2022 at 1-1:45pm',
         category: {
             tag: 'EHS 102',
             color: '#FFDB14'
@@ -155,7 +154,7 @@ const timelineData = [
     },
     {
         text: 'Award Ceremony & Team Awards',
-        date: 'April 03, 2022 at 3:30pm (45 minutes)',
+        date: 'April 03, 2022 at 3:30pm (30 minutes)',
         category: {
             tag: 'EHS 102',
             color: '#FFDB14'
