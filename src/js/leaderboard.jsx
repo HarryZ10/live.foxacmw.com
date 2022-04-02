@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 import TeamOne from './gitlab/team_1';
 import TeamTwo from './gitlab/team_2';
 import TeamThree from './gitlab/team_3';
-import TeamFour from './gitlab/team_4';
+// import TeamFour from './gitlab/team_4';
 import TeamFive from './gitlab/team_5';
 import TeamSix from './gitlab/team_6';
 
@@ -32,14 +32,14 @@ export default function Leaderboard() {
                 <Col sm={6}>
                     <TeamThree/>
                 </Col>
-                <Col sm={6}>
+                {/* <Col sm={6}>
                     <TeamFour/>
-                </Col>
-            </Row>
-            <Row>
+                </Col> */}
                 <Col sm={6}>
                     <TeamFive/>
                 </Col>
+            </Row>
+            <Row>
                 <Col sm={6}>
                     <TeamSix/>
                 </Col>

@@ -84,7 +84,7 @@ export default function TeamSix() {
                 <Card.Title style={title}>Team 6</Card.Title>
                 <Card.Subtitle style={subtitle} className="mb-2 text-muted"># of Commits: {data.length}</Card.Subtitle>
                 <Card.Text style={subtitle}>
-                {data ? <p style={warning}>No commits yet!</p> : <p>Commit: "{data && data[Math.floor(Math.random() * data.length)].message}"</p>}
+                {data === undefined ? <p style={warning}>No commits yet!</p> : <p>Commit: "{data && data[Math.floor(Math.random() * data.length)].message}"</p>}
 
                 </Card.Text>
             </Card.Body>
