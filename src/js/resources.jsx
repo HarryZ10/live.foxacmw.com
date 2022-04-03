@@ -21,7 +21,7 @@ function Resources() {
           Devpost
         </div>
       </a>
-      <a href="https://drive.google.com/drive/folders/1f7en7-2R4sUqEt2q2yqoccsMMkWzoTLN?usp=sharing" rel="noopener noreferrer" target="_blank">
+      <a href="mailto:acm.gfu@gmail.com" rel="noopener noreferrer" target="_blank">
         <div className="resource-3">
           <img src={driveIcon} alt="devpost icon" className="resource-icon" />
           Submit Presentation
