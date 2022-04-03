@@ -9,6 +9,8 @@ import {LinkedIn} from '../content.json';
 import Button from 'react-bootstrap/Button';
 import { START_DATE, default as Timer } from "../timer.jsx";
 
+
+
 export default function TeamOne() {
 
     var content = [];
@@ -35,10 +37,9 @@ export default function TeamOne() {
     // for every 100 items fetched, increment page count
     React.useEffect(() => {
         if (data && data.length === 100) {
-            setPage(page + 2);
+            setPage(page + 1);
         }
-    }, [data]);
-
+    }, [data])
 
     if (isLoading) return <BallTriangle color="#96B3CC" height={20} width={20} />;
     if (error) return <p>404!</p>

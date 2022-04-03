@@ -11,6 +11,7 @@ import Schedule from "./js/schedule.jsx";
 import Leaderboard from "./js/leaderboard.jsx";
 import Footer from "./js/footer.jsx";
 import PrivacyPolicy from "./js/privacypolicy.jsx";
+import GitlabGraph from "./js/graph.jsx";
 
 import "./favicons/favicons";
 import "./index.scss";
@@ -25,6 +26,7 @@ class Main extends React.Component {
                 <Resources />
                 <p>Note: all times below are in PT (California time)</p>
                 <Schedule />
+                {/* <GitlabGraph /> */}
                 <Leaderboard />
                 <Footer />
             </div>

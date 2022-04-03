@@ -33,7 +33,7 @@ export default function TeamSix() {
     // for every 100 items fetched, increment page count
     React.useEffect(() => {
         if (data && data.length === 100) {
-            setPage(page + 2);
+            setPage(page + 1);
         }
     }, [data]);
 

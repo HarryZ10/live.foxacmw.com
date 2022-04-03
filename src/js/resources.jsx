@@ -1,7 +1,8 @@
 import React from "react";
 import discordIcon from "../svg/discord.svg";
 import devpostIcon from "../svg/devpost.svg";
-import formsIcon from "../svg/forms.svg";
+// import formsIcon from "../svg/forms.svg";
+import driveIcon from "../svg/drive.svg";
 
 function Resources() {
   return (
@@ -20,12 +21,18 @@ function Resources() {
           Devpost
         </div>
       </a>
-      <a href="https://forms.gle/i7LdZwAkzMaysJ7H7" rel="noopener noreferrer" target="_blank">
+      <a href="https://drive.google.com/drive/folders/1f7en7-2R4sUqEt2q2yqoccsMMkWzoTLN?usp=sharing" rel="noopener noreferrer" target="_blank">
+        <div className="resource-3">
+          <img src={driveIcon} alt="devpost icon" className="resource-icon" />
+          Submit Presentation
+        </div>
+      </a>
+      {/* <a href="https://forms.gle/i7LdZwAkzMaysJ7H7" rel="noopener noreferrer" target="_blank">
         <div className="resource-3">
           <img src={formsIcon} alt="forms icon" className="resource-icon" />
           Teams Check-In Form <small style={{ fontSize: '0.8rem'}}>(Due April 2nd)</small>
         </div>
-      </a>
+      </a> */}
     </div>
   );
 }
