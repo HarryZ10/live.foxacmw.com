@@ -81,22 +81,22 @@ const timelineData = [
             func: true
         }
     },
-    {
-        text: 'Twilight Help Desk Hour (limited)',
-        date: 'April 2, 2022 at 1-3am (2 hours)',
-        category: {
-            tag: 'help desk',
-            color: '#545ecc'
-        }
-    },
-    {
-        text: 'Open Help Desk Hours',
-        date: 'April 2, 2022 at 8:00am (until 10pm)',
-        category: {
-            tag: 'help desk',
-            color: '#545ecc'
-        }
-    },
+    // {
+    //     text: 'Twilight Help Desk Hour (limited)',
+    //     date: 'April 2, 2022 at 1-3am (2 hours)',
+    //     category: {
+    //         tag: 'help desk',
+    //         color: '#545ecc'
+    //     }
+    // },
+    // {
+    //     text: 'Open Help Desk Hours',
+    //     date: 'April 2, 2022 at 8:00am (until 10pm)',
+    //     category: {
+    //         tag: 'help desk',
+    //         color: '#545ecc'
+    //     }
+    // },
     {
         text: 'Twilight Help Desk Hours',
         date: 'April 3, 2022 at 11pm-1am (limited)',
@@ -116,7 +116,7 @@ const timelineData = [
     },
     {
         text: 'Presentation Submission Deadline',
-        date: 'April 03, 2022 at 8:50am',
+        date: 'April 03, 2022 at 11:00am',
         category: {
             tag: 'submissions',
             color: '#6a3e87'
