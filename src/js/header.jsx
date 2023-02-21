@@ -1,16 +1,16 @@
-import React from 'react';
-import * as whiteLeavesLogo from '../svg/whiteLeavesLogo.svg';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faInstagram} from '@fortawesome/free-brands-svg-icons';
+import React from "react";
+import * as whiteLeavesLogo from "../svg/whiteLeavesLogo.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 // import Timer from './timer.jsx';
 
 function Header() {
-  return(
+  return (
     <nav id="header">
-      <ul className="container" style={{background: '#fed13e'}}>
+      <ul className="container">
         <li id="header-logo">
           <a href="https://live.foxacmw.com">
-            <img src={whiteLeavesLogo} alt="code jam small logo"/>
+            {/* <img src={whiteLeavesLogo} alt="code jam small logo" /> */}
             <span className="logo-text-code">code</span>
             <span className="logo-text-jam">jam</span>
             <span className="logo-text-live">live</span>
@@ -23,9 +23,16 @@ function Header() {
 }
 
 function SocialMedia() {
-  return(
+  return (
     <div id="social-media">
-      <a style={{background: 'white'}} href="https://www.instagram.com/acmw.gfu" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon style={{color: '#000'}} icon={faInstagram} /></a>
+      <a
+        style={{ background: "white" }}
+        href="https://www.instagram.com/acmw.gfu"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon style={{ color: "#000" }} icon={faInstagram} />
+      </a>
     </div>
   );
 }

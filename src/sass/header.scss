@@ -4,13 +4,12 @@ $header-font-size: 24px;
 $header-margin: 16px;
 
 #header {
-
-  background-color: rgb(254, 209, 62);
+  background-color: #083d6b;
 
   @extend %menu;
   top: 0;
   height: 80px;
-  box-shadow: 0 5px 30px -5px rgba(0,0,0,.2);
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.2);
 
   .container {
     @include flex(row nowrap, flex-end, center);
