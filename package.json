@@ -60,6 +60,7 @@
     "mongoose": "^6.2.1",
     "mui": "^0.0.1",
     "node-gitlab-api": "^3.0.2",
+    "node-sass": "^8.0.0",
     "object-assign": "4.1.1",
     "path": "^0.12.7",
     "postcss-flexbugs-fixes": "3.2.0",
