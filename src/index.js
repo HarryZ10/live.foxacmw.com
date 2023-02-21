@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from "./js/header.jsx";
 import Countdown from "./js/countdown.jsx";

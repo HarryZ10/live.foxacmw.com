@@ -4,11 +4,8 @@ import Card from 'react-bootstrap/Card'
 import { BallTriangle } from  'react-loader-spinner'
 import TeamModal from '../teamModal'
 import SimpleBar from 'simplebar-react';
-import 'simplebar/dist/simplebar.min.css';
 import {LinkedIn} from '../content.json';
 import Button from 'react-bootstrap/Button';
-import { START_DATE, default as Timer } from "../timer.jsx";
-
 
 
 export default function TeamOne() {
