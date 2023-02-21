@@ -7,19 +7,15 @@ import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 import {LinkedIn} from '../content.json';
 import Button from 'react-bootstrap/Button';
-import { START_DATE, default as Timer } from "../timer.jsx";
 
-
-
-export default function TeamOne() {
+export default function TeamFour() {
 
     var content = [];
-    var team1 = LinkedIn.team1;
+    var team4 = LinkedIn.team4;
 
-    for (var i = 0; i < team1.length; i++) {
-        content.push(TeamInfo(team1[i].name, team1[i].url))
+    for (var i = 0; i < team4.length; i++) {
+        content.push(TeamInfo(team4[i].name, team4[i].url))
     }
-
 
     const modalRef = useRef();
 
@@ -27,7 +23,7 @@ export default function TeamOne() {
     const [page, setPage] = React.useState(1);
 
     const { isLoading, error, data}  = useFetch(
-        `https://gitlab.com/api/v4/projects/43694584/repository/commits?ref_name=main&since=2022-03-09T01:00:00.000Z&until=2022-04-03T08:15:00.000Z&all=true&per_page=500&page=${page}`,
+        `https://gitlab.com/api/v4/projects/43694611/repository/commits?ref_name=main&since=2022-03-02T01:00:00.000Z&until=2022-04-03T08:15:00.000Z&all=true&per_page=500&page=${page}`,
         {
             headers: {
                 'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
@@ -39,30 +35,34 @@ export default function TeamOne() {
         if (data && data.length === 100) {
             setPage(page + 1);
         }
-    }, [data])
+    }, [data]);
 
     if (isLoading) return <BallTriangle color="#96B3CC" height={20} width={20} />;
+
     if (error) return <p>404!</p>
 
     return (
         <div>
+
             <TeamModal ref={modalRef}>
                 <div className="grid">
                     <div className="whole-modal">
                     </div>
 
                     <div className="title-modal">
-                        <h1 id="modal-title">Team 1</h1>
+                        <h1 id="modal-title">Team 4</h1>
                     </div>
 
                     <div className="content-in-modal">
+                        <p>
                         {content}
+                        </p>
                     </div>
 
                     <div className="footer-modal">
 
                         <p>
-                            <p>
+                        <p>
                                 <span style={{
                                 fontFamily: 'ThirstyScriptExtraBold',
                                 fontSize: '1.5rem',
@@ -88,13 +88,14 @@ export default function TeamOne() {
                 </div>
 
             </TeamModal>
-
+            
             <Card id="team-card" style={{ width: '80%', marginBottom: '2rem' }}>
             <Card.Body onClick={() => modalRef.current.open()} style={{ paddingTop: '1.2rem', paddingBottom: '1.2rem'}}>
-                <Card.Title style={title}>Team 1</Card.Title>
+                <Card.Title style={title}>Team 4</Card.Title>
                 <Card.Subtitle style={subtitle} className="mb-2 text-muted"># of Commits: {data.length}</Card.Subtitle>
                 <Card.Text style={subtitle}>
-                {!data || data.length === 0 ? <p style={warning}>No commits yet!</p> : <p>Commit: "{data && data[Math.floor(Math.random() * data.length)].message}"</p>}
+                { !data || data.length === 0 ? <p style={warning}>No commits yet!</p> : <p>Commit: "{data && data[Math.floor(Math.random() * data.length)].message}"</p>}
+
                 </Card.Text>
             </Card.Body>
             </Card>

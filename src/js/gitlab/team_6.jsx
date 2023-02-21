@@ -23,7 +23,7 @@ export default function TeamSix() {
     const [page, setPage] = React.useState(1);
 
     const { isLoading, error, data}  = useFetch(
-        `https://gitlab.com/api/v4/projects/34362988/repository/commits?ref_name=main&since=2022-04-02T01:00:00.000Z&until=2022-04-03T08:15:00.000Z&all=true&per_page=500&page=${page}`,
+        `https://gitlab.com/api/v4/projects/43694625/repository/commits?ref_name=main&since=2022-03-02T01:00:00.000Z&until=2022-04-03T08:15:00.000Z&all=true&per_page=500&page=${page}`,
         {
             headers: {
                 'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
@@ -95,7 +95,7 @@ export default function TeamSix() {
                 <Card.Title style={title}>Team 6</Card.Title>
                 <Card.Subtitle style={subtitle} className="mb-2 text-muted"># of Commits: {data.length}</Card.Subtitle>
                 <Card.Text style={subtitle}>
-                {data === undefined ? <p style={warning}>No commits yet!</p> : <p>Commit: "{data && data[Math.floor(Math.random() * data.length)].message}"</p>}
+                { !data || data.length === 0 ? <p style={warning}>No commits yet!</p> : <p>Commit: "{data && data[Math.floor(Math.random() * data.length)].message}"</p>}
 
                 </Card.Text>
             </Card.Body>

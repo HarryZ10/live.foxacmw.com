@@ -27,7 +27,7 @@ class Main extends React.Component {
                 <p>Note: all times below are in PT (California time)</p>
                 <Schedule />
                 {/* <GitlabGraph /> */}
-                <Leaderboard />
+                {/* <Leaderboard /> */}
                 <Footer />
             </div>
         );
