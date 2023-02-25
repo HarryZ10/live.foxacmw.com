@@ -12,7 +12,7 @@
 		"build": "vite build",
 		"dev": "vite serve",
 		"preview": "vite preview",
-		"serve": "node server.js"
+		"start": "vite"
 	},
 	"author": "ACM-W Team",
 	"homepage": "https://live.foxacmw.com",
