@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from "./js/header.jsx";
 import Countdown from "./js/countdown.jsx";
@@ -12,7 +12,6 @@ import Footer from "./js/footer.jsx";
 import PrivacyPolicy from "./js/privacypolicy.jsx";
 import GitlabGraph from "./js/graph.jsx";
 
-import "./favicons/favicons";
 import "./index.scss";
 import './fonts/ThirstyScriptExtraBold.otf';
 
@@ -23,7 +22,6 @@ class Main extends React.Component {
             <div>
                 <Countdown />
                 <Resources />
-                <p>Note: all times below are in PT (California time)</p>
                 <Schedule />
                 {/* <GitlabGraph /> */}
                 {/* <Leaderboard /> */}
