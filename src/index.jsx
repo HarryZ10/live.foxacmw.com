@@ -24,7 +24,7 @@ class Main extends React.Component {
                 <Resources />
                 <Schedule />
                 {/* <GitlabGraph /> */}
-                {/* <Leaderboard /> */}
+                <Leaderboard />
                 <Footer />
             </div>
         );

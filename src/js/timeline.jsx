@@ -3,89 +3,75 @@ import React from 'react';
 const timelineData = [
     {
         text: 'Doors open!',
-        date: 'April 1, 2022 at 4:15pm',
+        date: 'Friday at 4pm',
         category: {
             tag: 'EHS 102',
-            color: '#FFDB14'
+            color: '#4764f6'
         },
         description: 'Get excited and hyped for the Code Jam launch!',
     },
     {
         text: 'Code Jam Kickoff',
-        date: 'April 1, 2022 at 4:30pm (30 minutes)',
+        date: 'Friday at 4pm',
         category: {
             tag: 'EHS 102',
-            color: '#FFDB14'
+            color: '#4764f6'
         },
         description: 'Hear more about what to expect and learn for the Code Jam.',
     },
     {
-        text: 'Team Building Activity',
-        date: 'April 1, 2022 at 5:00pm (20 minutes)',
+        text: 'Mentor x Team Building Activity',
+        date: 'Friday at 4:30pm',
         category: {
             tag: 'EHS 102',
-            color: '#FFDB14'
+            color: '#00520c'
         },
-        description: 'Bring on team morale!',
+        description: 'Bring on the team morale!',
     },
     {
         text: 'Workshop: Introduction to Hosting',
-        date: 'April 1, 2022 at 5:30pm (30 minutes)',
+        date: 'Friday at 4:45pm (30 minutes)',
         category: {
             tag: 'EHS 102',
-            color: '#FFDB14'
+            color: '#00520c'
         }
     },
     {
         text: 'Hacking begins!',
-        date: 'April 1, 2022 at 6:00pm',
+        date: 'Friday at 5pm',
         category: {
             tag: 'code jam',
             color: '#e17b77'
         },
         link: {
             url: '#',
-            text: 'Team Check-In Form (required)'
+            text: 'Team Check-In Form (by 9pm PT)'
         }
     },
     {
-        text: 'Minecraft Server!',
+        text: 'Twilight ACM-W Office Hours',
+        date: 'Friday-Saturday at 9pm-2am',
         category: {
-            tag: 'entertainment',
-            color: '#018f69'
+            tag: 'help desk',
+            color: '#545ecc'
         },
         link: {
-            text: 'codejam.minehut.gg',
-            func: true
+            url: '#',
+            text: 'Location: Maker Hub'
         }
     },
-    {
-        text: 'Twilight Help Desk Hour (limited)',
-        date: 'April 2, 2022 at 1-3am (2 hours)',
+        {
+        text: 'ACM-W Office Hours',
+        date: 'Saturday at 12-9pm',
         category: {
             tag: 'help desk',
             color: '#545ecc'
-        }
+        },
+        description: 'Location: EHS 119'
     },
     {
-        text: 'Open Help Desk Hours',
-        date: 'April 2, 2022 at 8:00am (until 10pm)',
-        category: {
-            tag: 'help desk',
-            color: '#545ecc'
-        }
-    },
-    {
-        text: 'Twilight Help Desk Hours',
-        date: 'April 3, 2022 at 11pm-1am (limited)',
-        category: {
-            tag: 'help desk',
-            color: '#545ecc'
-        }
-    },
-    {
-        text: 'Hacking Ends... Code Submission Deadline',
-        date: 'April 03, 2022 at 1:15am',
+        text: 'Hacking Ends!!',
+        date: 'Sunday at 12:00am',
         category: {
             tag: 'submissions',
             color: '#6a3e87'
@@ -94,7 +80,7 @@ const timelineData = [
     },
     {
         text: 'Presentation Submission Deadline',
-        date: 'April 03, 2022 at 11:00am',
+        date: 'Sunday at 11:00am',
         category: {
             tag: 'submissions',
             color: '#6a3e87'
@@ -106,36 +92,36 @@ const timelineData = [
     },
     {
         text: 'Celebratory Brunch',
-        date: 'April 03, 2022 at 12:00pm',
-        description: 'Come to the IRC with the red door for a celebratory brunch!',
+        date: 'Sunday at 12:00pm',
+        description: 'Come to the IRC (the house across Pennington with the red door across)!',
         category: {
             tag: 'IRC',
-            color: '#FFDB14'
+            color: '#4764f6'
         }
     },
     {
-        text: 'SWE & Professional Panel',
-        date: 'April 03, 2022 at 1-1:45pm',
+        text: 'Alumni SWE Panel',
+        date: 'Sunday at 1-1:45pm',
         category: {
             tag: 'EHS 102',
-            color: '#FFDB14'
+            color: '#4764f6'
         },
         description: 'Come meet all the working alumni & mentors, and other hackers that have helped put this on for you all!',
     },
     {
         text: 'Annual Code Jam Showcase 2022',
-        date: 'April 03, 2022 at 2pm (45 minutes)',
+        date: 'Sunday at 2pm',
         category: {
             tag: 'EHS 102',
-            color: '#FFDB14'
+            color: '#4764f6'
         },
     },
     {
         text: 'Award Ceremony & Team Awards',
-        date: 'April 03, 2022 at 3:30pm (30 minutes)',
+        date: 'Sunday at 4pm',
         category: {
             tag: 'EHS 102',
-            color: '#FFDB14'
+            color: '#4764f6'
         },
     }
 ]
