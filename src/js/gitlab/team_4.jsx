@@ -6,6 +6,7 @@ import TeamModal from '../teamModal'
 import SimpleBar from 'simplebar-react';
 import {LinkedIn} from '../content.json';
 import Button from 'react-bootstrap/Button';
+import process from 'process';
 
 export default function TeamFour() {
 
@@ -22,10 +23,10 @@ export default function TeamFour() {
     const [page, setPage] = React.useState(1);
 
     const { isLoading, error, data}  = useFetch(
-        `https://gitlab.com/api/v4/projects/43694611/repository/commits?ref_name=main&since=2022-03-02T01:00:00.000Z&until=2022-04-03T08:15:00.000Z&all=true&per_page=500&page=${page}`,
+        `https://gitlab.com/api/v4/projects/43694611/repository/commits?ref_name=main&all=true&per_page=500&page=${page}`,
         {
             headers: {
-                'Private-Token': process.env.REACT_APP_GITLAB_TOKEN
+                'Private-Token': import.meta.env.VITE_GITLAB_TOKEN
         }
     });
 

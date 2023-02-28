@@ -1,100 +1,108 @@
 {
-	"LinkedIn": {
-		"team1": [
-			{
-				"name": "Daniel",
-				"url": "https://www.linkedin.com/in/daniel-beachy/"
-			},
-			{
-				"name": "Alex",
-				"url": "https://www.linkedin.com/in/alex-c-mills/"
-			},
-			{
-				"name": "Conner"
-			},
-			{
-				"name": "Dominic"
-			}
-		],
-		"team3": [
-			{
-				"name": "Trey",
-				"url": "https://linkedin.com/in/trey-moen"
-			},
-			{
-				"name": "Rylan",
-				"url": "http://www.linkedin.com/in/rschubkegel/"
-			},
-			{
-				"name": "Adam",
-				"url": "https://www.linkedin.com/in/adam-hearn/"
-			},
-			{
-				"name": "Blake"
-			}
-		],
-		"team2": [
-			{
-				"name": "Ashley"
-			},
-			{
-				"name": "Kelly"
-			},
-			{
-				"name": "Olivia"
-			},
-			{
-				"name": "Josiah"
-			},
-			{
-				"name": "Caleb"
-			},
-			{
-				"name": "Tyler"
-			}
-		],
-		"team4": [
-			{
-				"name": "Zach"
-			},
-			{
-				"name": "Cody"
-			},
-			{
-				"name": "Cameron"
-			},
-			{
-				"name": "Caleb"
-			}
-		],
-		"team5": [
-			{
-				"name": "Kevin"
-			},
-			{
-				"name": "Matthew"
-			},
-			{
-				"name": "Dylan"
-			},
-			{
-				"name": "Luke"
-			}
-		],
-		"team6": [
-			{
-				"name": "Josh",
-				"url": "https://www.linkedin.com/in/joshua-m-hicks/"
-			},
-			{
-				"name": "Connor"
-			},
-			{
-				"name": "Nicolle"
-			},
-			{
-				"name": "Blake"
-			}
-		]
-	}
+    "LinkedIn": {
+        "team1": [
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "team3": [
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "team2": [
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "team4": [
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "team5": [
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            }
+        ],
+        "team6": [
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            },
+            {
+                "name": "",
+                "url": ""
+            }
+        ]
+    }
 }
