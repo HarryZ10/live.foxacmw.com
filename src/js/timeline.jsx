@@ -153,7 +153,7 @@ function TimelineItem (data) {
 
                 {/* make an alert to screen */}
 
-                {data.link && data.link.func && (
+                {/* {data.link && data.link.func && (
                     <a
                         onClick={() => { navigator.clipboard.writeText('codejam.minehut.gg')
                         alert(`Copied ${data.link.text} to clipboard successfully!`) 
@@ -162,7 +162,7 @@ function TimelineItem (data) {
                     >
                         {data.link.text}
                     </a> 
-                )}
+                )} */}
                 <span className="circle" />
             </div>
         </div>
