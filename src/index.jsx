@@ -11,6 +11,7 @@ import Leaderboard from "./js/leaderboard.jsx";
 import Footer from "./js/footer.jsx";
 import PrivacyPolicy from "./js/privacypolicy.jsx";
 import GitlabGraph from "./js/graph.jsx";
+import Prizes from "./js/prizes.jsx";
 
 import "./index.scss";
 import './fonts/ThirstyScriptExtraBold.otf';
@@ -58,6 +59,7 @@ function App() {
                     <Route exact path="/schedule" component={Schedule} />
                     <Route exact path="/leaderboard" component={Leaderboard} />
                     <Route exact path="/privacy-policy" component={PrivacyPolicy} />
+                    <Route exact path="/prizes" component={Prizes} />
                 </Switch>
             </Router>
         </div>
