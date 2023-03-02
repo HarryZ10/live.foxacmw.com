@@ -13,9 +13,9 @@
 }
 
 %resource {
-  width: $section-width/6;
+  width: $section-width / 6;
   padding: 16px 0;
-  margin: 0 10px;
+  // margin: 0 0.2px;
 }
 
 @for $i from 1 through 6 {
@@ -35,7 +35,8 @@
 
 .resource-icon {
   height: 24px;
-  vertical-align: middle;
+  vertical-align: top;
+  margin-right: 12px;
 }
 
 @media screen and (max-width: $mobile-screen) {
@@ -43,8 +44,14 @@
     flex-wrap: wrap;
 
     %resource {
-      width: $section-width/3;
+      width: $section-width / 2;
       padding: 12px 0;
+    }
+
+    .resource-icon {
+      height: 32px;
+      margin-top: 12px;
+      margin-bottom: 15px;
     }
   }
 }
