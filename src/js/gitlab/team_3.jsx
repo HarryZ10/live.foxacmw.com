@@ -6,7 +6,6 @@ import TeamModal from '../teamModal'
 import SimpleBar from 'simplebar-react';
 import {LinkedIn} from '../content.json';
 import Button from 'react-bootstrap/Button';
-import process from 'process';
 
 export default function TeamThree() {
 
