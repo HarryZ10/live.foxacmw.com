@@ -20,17 +20,17 @@ const timelineData = [
         description: 'Hear more about what to expect and learn for the Code Jam.',
     },
     {
-        text: 'Mentor x Team Building Activity',
+        text: 'Mentor x Team Networking',
         date: 'Friday at 4:30pm',
         category: {
-            tag: 'EHS 102',
+            tag: 'EHS Atrium',
             color: '#00520c'
         },
         description: 'Bring on the team morale!',
     },
     {
         text: 'Workshop: Introduction to Hosting',
-        date: 'Friday at 4:45pm (30 minutes)',
+        date: 'Friday at 4:45pm (15 minutes)',
         category: {
             tag: 'EHS 102',
             color: '#00520c'
@@ -91,11 +91,11 @@ const timelineData = [
         }
     },
     {
-        text: 'Celebratory Brunch',
-        date: 'Sunday at 12:00pm',
-        description: 'Come to the IRC (the house across Pennington with the red door across)!',
+        text: 'Celebratory Banquet',
+        date: 'Sunday at 11:30am',
+        description: 'Dress to impress!',
         category: {
-            tag: 'IRC',
+            tag: 'EHS Atrium',
             color: '#4764f6'
         }
     },
