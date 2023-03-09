@@ -50,27 +50,22 @@ const timelineData = [
     },
     {
         text: 'Twilight ACM-W Office Hours',
-        date: 'Friday-Saturday at 9pm-2am',
+        date: 'TBA',
         category: {
             tag: 'help desk',
             color: '#545ecc'
-        },
-        link: {
-            url: '#',
-            text: 'Location: Maker Hub'
         }
     },
         {
         text: 'ACM-W Office Hours',
-        date: 'Saturday at 12-9pm',
+        date: 'TBA',
         category: {
             tag: 'help desk',
             color: '#545ecc'
         },
-        description: 'Location: EHS 119'
     },
     {
-        text: 'Hacking Ends!!',
+        text: 'Hacking Ends!',
         date: 'Sunday at 12:00am',
         category: {
             tag: 'submissions',
@@ -86,7 +81,7 @@ const timelineData = [
             color: '#6a3e87'
         },
         link: {
-            url: 'https://foxacmw.devpost.com',
+            url: 'https://codejam-2023.devpost.com/',
             text: 'Submit a formal presentation to Devpost'
         }
     },
