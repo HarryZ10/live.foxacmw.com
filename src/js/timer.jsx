@@ -2,8 +2,8 @@ import React from "react";
 
 // Start Date: March 10, 2023 at 6:00pm PST
 // End Date: March 12, 2023 at 12am PST
-export const START_DATE = new Date("2023-03-10T21:00:00.000Z");
-export const END_DATE = new Date("2023-03-12T08:00:00.000Z");
+export const START_DATE = new Date("2023-03-10T19:00:00-05:00");
+export const END_DATE = new Date("2023-03-12T04:00:00-04:00");
 
 function calculateTimeUntil() {
   let date = new Date() < START_DATE ? START_DATE : END_DATE;
