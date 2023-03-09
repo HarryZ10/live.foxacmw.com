@@ -1,107 +1,102 @@
 {
     "LinkedIn": {
-        "team1": [
-            {
-                "name": "",
-                "url": ""
+        "team1": [{
+                "name": "Kevin",
+                "url": "https://www.linkedin.com/in/kevin-b-lockwood/"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Matt",
+                "url": "https://www.linkedin.com/in/matt-t-a66759153/"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Josiah",
+                "url": "https://www.linkedin.com/in/josiah-armstrong-505a8a207"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Ben",
+                "url": "https://www.linkedin.com/in/benjamin-harper-cs"
             }
         ],
-        "team3": [
-            {
-                "name": "",
-                "url": ""
+        "team2": [{
+                "name": "Caleb",
+                "url": "https://www.linkedin.com/in/caleb-jackson-b08660264"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Andrew",
+                "url": "https://www.linkedin.com/in/andrew-caswell-59b96124a"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Tyler",
+                "url": "www.linkedin.com/in/tyjshelton"
+            },
+            {
+                "name": "Marcus",
+                "url": "https://www.linkedin.com/in/marcus-bower-184825264/"
             }
         ],
-        "team2": [
-            {
-                "name": "",
-                "url": ""
+        "team3": [{
+                "name": "Daniel",
+                "url": "https://www.linkedin.com/in/daniel-beachy/"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Conner",
+                "url": "https://www.linkedin.com/in/conner-taylor-1046a2236/"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Marvin",
+                "url": "https://www.linkedin.com/in/marvinhozi"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Alan",
+                "url": "https://www.linkedIn.com/in/alanma23"
+            }
+
+        ],
+        "team4": [{
+                "name": "Evan",
+                "url": "https://www.linkedin.com/in/evan-richards-808"
+            },
+            {
+                "name": "Blake",
+                "url": "www.linkedin.com/in/blake-bryan"
+            },
+            {
+                "name": "Luke",
+                "url": "www.linkedin.com/in/luke-gantar/"
             }
         ],
-        "team4": [
-            {
-                "name": "",
-                "url": ""
+        "team5": [{
+                "name": "Michael",
+                "url": "https://www.linkedin.com/in/michael-bodge/"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Brody",
+                "url": "https://www.linkedin.com/in/brody-lee-73138b233/"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Ethan",
+                "url": "www.linkedin.com/in/ethan-vang-a3432225a"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Olivia",
+                "url": "https://www.linkedin.com/in/olivia-barner-8558b9208/"
             }
         ],
-        "team5": [
-            {
-                "name": "",
-                "url": ""
+        "team6": [{
+                "name": "Toby",
+                "url": "https://www.linkedin.com/in/tobyklauder/"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "David",
+                "url": "https://www.linkedin.com/in/david-seledkov-517911265"
             },
             {
-                "name": "",
-                "url": ""
+                "name": "Austin",
+                "url": "https://www.linkedin.com/in/austin-van-houte"
             },
             {
-                "name": "",
-                "url": ""
-            }
-        ],
-        "team6": [
-            {
-                "name": "",
-                "url": ""
-            },
-            {
-                "name": "",
-                "url": ""
-            },
-            {
-                "name": "",
-                "url": ""
-            },
-            {
-                "name": "",
-                "url": ""
+                "name": "Franco",
+                "url": "www.linkedin.com/in/franko-basquez-64121b266"
             }
         ]
     }
