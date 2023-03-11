@@ -91,7 +91,18 @@ export default function TeamTwo() {
                 <Card.Title style={title}>Team 2</Card.Title>
                 <Card.Subtitle style={subtitle} className="mb-2 text-muted"># of Commits: {data.length}</Card.Subtitle>
                 <Card.Text style={subtitle}>
-                    {!data || data.length === 0 ? <p style={warning}>No commits yet!</p> : <p>Commit: "{data && data[Math.floor(Math.random() * data.length)].message}"</p>}       
+                {!data || data.length === 0 ? 
+                    <p style={warning}>No commits yet!</p> : 
+                    <p>
+                        Commit: "{data && data[data.length - 1].message
+                        .split(' ')
+                        .slice(0, 6)
+                        .join(' ')
+                        .split('/')
+                        .slice(0, 3)
+                        .join(' ')}" 
+                    </p>
+                }
                 </Card.Text>
             </Card.Body>
             </Card>
