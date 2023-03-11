@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card'
 import { BallTriangle } from  'react-loader-spinner'
 import TeamModal from '../teamModal'
 import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
 import {LinkedIn} from '../content.json';
 import Button from 'react-bootstrap/Button';
 
@@ -60,9 +61,8 @@ export default function TeamSix() {
                     </div>
 
                     <div className="footer-modal">
-
                         <p>
-                        <p>
+                            <p>
                                 <span style={{
                                 fontFamily: 'ThirstyScriptExtraBold',
                                 fontSize: '1.5rem',

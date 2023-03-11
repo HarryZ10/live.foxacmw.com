@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card'
 import { BallTriangle } from  'react-loader-spinner'
 import TeamModal from '../teamModal'
 import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
 import {LinkedIn} from '../content.json';
 import Button from 'react-bootstrap/Button';
 
@@ -27,8 +28,8 @@ export default function TeamOne() {
         {
             headers: {
                 'Private-Token': import.meta.env.VITE_GITLAB_TOKEN
-        }
-    });
+            }
+        });
 
     // for every 100 items fetched, increment page count
     React.useEffect(() => {
