@@ -36,10 +36,6 @@
             {
                 "name": "David",
                 "url": "https://www.linkedin.com/in/david-seledkov-517911265"
-            },
-            {
-                "name": "Toby",
-                "url": "https://www.linkedin.com/in/tobyklauder/"
             }
         ],
         "team3": [{
@@ -76,6 +72,10 @@
         "team5": [{
                 "name": "Michael",
                 "url": "https://www.linkedin.com/in/michael-bodge/"
+            },
+            {
+                "name": "Toby",
+                "url": "https://www.linkedin.com/in/tobyklauder/"
             },
             {
                 "name": "Brody",
