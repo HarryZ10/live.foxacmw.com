@@ -32,6 +32,14 @@
             {
                 "name": "Marcus",
                 "url": "https://www.linkedin.com/in/marcus-bower-184825264/"
+            },
+            {
+                "name": "David",
+                "url": "https://www.linkedin.com/in/david-seledkov-517911265"
+            },
+            {
+                "name": "Toby",
+                "url": "https://www.linkedin.com/in/tobyklauder/"
             }
         ],
         "team3": [{
@@ -82,22 +90,7 @@
                 "url": "https://www.linkedin.com/in/olivia-barner-8558b9208/"
             }
         ],
-        "team6": [{
-                "name": "Toby",
-                "url": "https://www.linkedin.com/in/tobyklauder/"
-            },
-            {
-                "name": "David",
-                "url": "https://www.linkedin.com/in/david-seledkov-517911265"
-            },
-            {
-                "name": "Austin",
-                "url": "https://www.linkedin.com/in/austin-van-houte"
-            },
-            {
-                "name": "Franco",
-                "url": "https://www.linkedin.com/in/franko-basquez-64121b266"
-            }
+        "team6": [
         ]
     }
 }
