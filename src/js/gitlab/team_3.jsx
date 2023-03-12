@@ -65,7 +65,10 @@ export default function TeamThree() {
                                 fontFamily: 'ThirstyScriptExtraBold',
                                 fontSize: '1.5rem',
                                 color: '#96B3CC' 
-                                }}>{data.length} commits</span>
+                                }}>{data.length + ((page - 1) * 100)} commits</span>
+                            </p>
+                            <p>
+                                This is showing page {page} of commits.
                             </p>
                             <p>
                                 {/* scroll box */}
