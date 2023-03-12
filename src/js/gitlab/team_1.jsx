@@ -17,7 +17,6 @@ export default function TeamOne() {
         content.push(TeamInfo(team1[i].name, team1[i].url))
     }
 
-
     const modalRef = useRef();
 
     // increment page count every 100 items fetched
@@ -89,7 +88,10 @@ export default function TeamOne() {
             <Card id="team-card" style={{ width: '80%', marginBottom: '2rem' }}>
             <Card.Body onClick={() => modalRef.current.open()} style={{ paddingTop: '1.2rem', paddingBottom: '1.2rem'}}>
                 <Card.Title style={title}>Team 1</Card.Title>
-                <Card.Subtitle style={subtitle} className="mb-2 text-muted"># of Commits: {data.length}</Card.Subtitle>
+                <Card.Subtitle style={subtitle} className="mb-2 text-muted">
+                    Page: {page} <br/>
+                    # of Commits: {data.length + ((page - 1) * 100)}
+                </Card.Subtitle>
                 <Card.Text style={subtitle}>
                 {!data || data.length === 0 ? 
                     <p style={warning}>No commits yet!</p> : 
