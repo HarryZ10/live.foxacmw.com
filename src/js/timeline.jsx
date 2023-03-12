@@ -121,7 +121,7 @@ const timelineData = [
     {
         text: '3rd Annual Award Ceremony',
         date: 'Sunday at 4pm',
-        description: 'Come see who wins the coveted ACM-W Code Jam 2022 awards, and invite your friends to come see the showcase!',
+        description: 'Come see who wins the coveted ACM-W Code Jam awards, and invite your friends to come see the showcase!',
         category: {
             tag: 'EHS 102',
             color: '#4764f6'
