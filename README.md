@@ -14,7 +14,6 @@ After staging changes, make sure you build the project
 - npm run build
 
 Stage changes again and commit, then push
-
 ---
 Confirm it is working locally by running
 - npm run dev
